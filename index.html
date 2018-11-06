@@ -1,333 +1,49 @@
-<!DOCTYPE html><html><head>
-      <title>index</title>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      
-      <link rel="stylesheet" href="file:////Users/terfno/.vscode/extensions/shd101wyy.markdown-preview-enhanced-0.3.11/node_modules/@shd101wyy/mume/dependencies/katex/katex.min.css">
-      
-      
-      
-      
-      
-      
-      
-      
-      
-
-      <style> 
-      /**
- * prism.js Github theme based on GitHub's theme.
- * @author Sam Clarke
- */
-code[class*="language-"],
-pre[class*="language-"] {
-  color: #333;
-  background: none;
-  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
-  text-align: left;
-  white-space: pre;
-  word-spacing: normal;
-  word-break: normal;
-  word-wrap: normal;
-  line-height: 1.4;
-
-  -moz-tab-size: 8;
-  -o-tab-size: 8;
-  tab-size: 8;
-
-  -webkit-hyphens: none;
-  -moz-hyphens: none;
-  -ms-hyphens: none;
-  hyphens: none;
-}
-
-/* Code blocks */
-pre[class*="language-"] {
-  padding: .8em;
-  overflow: auto;
-  /* border: 1px solid #ddd; */
-  border-radius: 3px;
-  /* background: #fff; */
-  background: #f5f5f5;
-}
-
-/* Inline code */
-:not(pre) > code[class*="language-"] {
-  padding: .1em;
-  border-radius: .3em;
-  white-space: normal;
-  background: #f5f5f5;
-}
-
-.token.comment,
-.token.blockquote {
-  color: #969896;
-}
-
-.token.cdata {
-  color: #183691;
-}
-
-.token.doctype,
-.token.punctuation,
-.token.variable,
-.token.macro.property {
-  color: #333;
-}
-
-.token.operator,
-.token.important,
-.token.keyword,
-.token.rule,
-.token.builtin {
-  color: #a71d5d;
-}
-
-.token.string,
-.token.url,
-.token.regex,
-.token.attr-value {
-  color: #183691;
-}
-
-.token.property,
-.token.number,
-.token.boolean,
-.token.entity,
-.token.atrule,
-.token.constant,
-.token.symbol,
-.token.command,
-.token.code {
-  color: #0086b3;
-}
-
-.token.tag,
-.token.selector,
-.token.prolog {
-  color: #63a35c;
-}
-
-.token.function,
-.token.namespace,
-.token.pseudo-element,
-.token.class,
-.token.class-name,
-.token.pseudo-class,
-.token.id,
-.token.url-reference .token.variable,
-.token.attr-name {
-  color: #795da3;
-}
-
-.token.entity {
-  cursor: help;
-}
-
-.token.title,
-.token.title .token.punctuation {
-  font-weight: bold;
-  color: #1d3e81;
-}
-
-.token.list {
-  color: #ed6a43;
-}
-
-.token.inserted {
-  background-color: #eaffea;
-  color: #55a532;
-}
-
-.token.deleted {
-  background-color: #ffecec;
-  color: #bd2c00;
-}
-
-.token.bold {
-  font-weight: bold;
-}
-
-.token.italic {
-  font-style: italic;
-}
-
-
-/* JSON */
-.language-json .token.property {
-  color: #183691;
-}
-
-.language-markup .token.tag .token.punctuation {
-  color: #333;
-}
-
-/* CSS */
-code.language-css,
-.language-css .token.function {
-  color: #0086b3;
-}
-
-/* YAML */
-.language-yaml .token.atrule {
-  color: #63a35c;
-}
-
-code.language-yaml {
-  color: #183691;
-}
-
-/* Ruby */
-.language-ruby .token.function {
-  color: #333;
-}
-
-/* Markdown */
-.language-markdown .token.url {
-  color: #795da3;
-}
-
-/* Makefile */
-.language-makefile .token.symbol {
-  color: #795da3;
-}
-
-.language-makefile .token.variable {
-  color: #183691;
-}
-
-.language-makefile .token.builtin {
-  color: #0086b3;
-}
-
-/* Bash */
-.language-bash .token.keyword {
-  color: #0086b3;
-}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{padding:0 1.6em;margin-top:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc li{margin-bottom:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{list-style-type:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  150px);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
-/* Please visit the URL below for more information: */
-/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
- 
-      </style>
-    </head>
-    <body for="html-export">
-      <div class="mume markdown-preview   ">
-      <h1 class="mume-header" id="takahito-sueda">Takahito Sueda</h1>
-
-<h2 class="mume-header" id="contact-me">Contact me</h2>
-
-<h3 class="mume-header" id="address">Address</h3>
-
-<p>708-1225<br>
-&#x5CA1;&#x5C71;&#x770C;&#x6D25;&#x5C71;&#x5E02;&#x897F;&#x4E0B;556-1</p>
-<h3 class="mume-header" id="mail-address">Mail address</h3>
-
-<p>gmail : <a href="mailto:sueda.takahito@gmail.com">sueda.takahito@gmail.com</a><br>
-outlook : <a href="mailto:suedatakahito@outlook.jp">suedatakahito@outlook.jp</a><br>
-office365 : <a href="mailto:b-suedat@tsuyama.kosen-ac.jp">b-suedat@tsuyama.kosen-ac.jp</a></p>
-<h3 class="mume-header" id="sns">SNS</h3>
-
-<p>Facebook : <a href="https://www.facebook.com/takahito.sueda">takahito.sueda</a><br>
-Twitter : <a href="https://twitter.com/terfno_mai">Terfno</a><br>
-Linkedin : <a href="https://www.linkedin.com/in/suedatakahito/">&#x672B;&#x7530; &#x8CB4;&#x4E00;</a><br>
-Github : <a href="https://github.com/Terfno">Terfno</a><br>
-Youtube : <a href="https://www.youtube.com/channel/UCxkKHEReWImVnREwRFXGYWg?view_as=subscriber">Terfno</a><br>
-Discord : Terfno(#8993)</p>
-<h3 class="mume-header" id="pgp-fingerprint">PGP Fingerprint</h3>
-
-<p>72FA FEBD 0DA3 7E30 1F34  BC87 E8F9 B7AA CF23 B493</p>
-<h2 class="mume-header" id="about-me">about me</h2>
-
-<h3 class="mume-header" id="my-name-is">My name is ...</h3>
-
-<p><a href="https://plus.google.com/u/0/104561188046823090278">&#x672B;&#x7530;&#x8CB4;&#x4E00;</a> (Sueda Takahito) &#x3067;&#x3059;&#xFF0E;<br>
-<a href="https://twitter.com/terfno_mai">Twitter</a>&#x3084;Slack&#x3067;&#x306F;Terfno (&#x305F;&#x3041;&#x3063;&#x3075;&#x306E;) &#x3068;&#x540D;&#x4E57;&#x3063;&#x3066;&#x3044;&#x307E;&#x3059;&#xFF0E;</p>
-<h3 class="mume-header" id="im-from">I&apos;m from ...</h3>
-
-<p><a href="http://www.tsuyama-ct.ac.jp/">&#x6D25;&#x5C71;&#x9AD8;&#x5C02;</a>&#x306E;&#x4EBA;&#x9593;&#x3067;&#x3059;&#xFF0E;<br>
-<a href="https://www.city.tsuyama.lg.jp/top.php">&#x6D25;&#x5C71;</a>&#x751F;&#x307E;&#x308C;&#x306E;&#x6D25;&#x5C71;&#x80B2;&#x3061;&#x3067;&#x3059;&#xFF0E;</p>
-<h3 class="mume-header" id="what-i-am-doing">What I am doing</h3>
-
-<ul>
-<li>&#x6D25;&#x5C71;&#x9AD8;&#x5C02; &#x30B7;&#x30B9;&#x30C6;&#x30E0;&#x7814;&#x7A76;&#x90E8;
-<ul>
-<li>HP : <a href="https://sysken.org/">sysken online</a></li>
-<li>Ruby&#x304C;&#x597D;&#x304D;</li>
-<li>&#x6700;&#x8FD1;&#x306F;&#x30C7;&#x30B6;&#x30A4;&#x30F3;</li>
-</ul>
-</li>
-<li>&#x30BD;&#x30D5;&#x30C8;&#x30C6;&#x30CB;&#x30B9;
-<ul>
-<li>&#x786C;&#x5F0F;&#x3082;&#x3061;&#x3087;&#x3063;&#x3068;&#x3067;&#x304D;&#x308B;&#x3088;</li>
-</ul>
-</li>
-<li>&#x5C11;&#x6797;&#x5BFA;&#x62F3;&#x6CD5;
-<ul>
-<li>&#x521D;&#x6BB5;&#x3067;&#x3059;</li>
-</ul>
-</li>
-<li>&#x30B5;&#x30D0;&#x30A4;&#x30D0;&#x30EB;&#x30B2;&#x30FC;&#x30E0;
-<ul>
-<li>&#x975E;&#x516C;&#x5F0F;&#x306A;&#x540C;&#x597D;&#x4F1A;&#x3092;&#x904B;&#x55B6;&#x3057;&#x3066;&#x307E;&#x3059;</li>
-<li>HK&#x304C;&#x597D;&#x304D;</li>
-</ul>
-</li>
-<li>DJ
-<ul>
-<li>rekordbox&#x4F7F;&#x3063;&#x3066;&#x307E;&#x3059;&#x3002;</li>
-<li>&#x57FA;&#x672C;&#x7684;&#x306B;house&#x7CFB;&#x3060;&#x3051;&#x3069;dubstep&#x3082;&#x5927;&#x597D;&#x304D;&#xFF01;</li>
-<li>DJ&#x306E;&#x3068;&#x304D;&#x306F;&#x3060;&#x3044;&#x305F;&#x3044;&#x30B9;&#x30FC;&#x30C4;&#x7740;&#x3066;&#x308B;</li>
-</ul>
-</li>
-</ul>
-<h3 class="mume-header" id="what-i-like">What I like</h3>
-
-<ul>
-<li>&#x30D6;&#x30E9;&#x30A6;&#x30B6;&#x306F;Opera
-<ul>
-<li>&#x3042;&#x3068;Vivaldi&#x3082;&#x597D;&#x304D;&#x3088;</li>
-</ul>
-</li>
-<li>&#x30C6;&#x30AD;&#x30B9;&#x30C8;&#x30A8;&#x30C7;&#x30A3;&#x30BF;&#x306F;Vim
-<ul>
-<li><code>&#x4E16;&#x306E;&#x4E2D;&#x306B;&#x30C6;&#x30AD;&#x30B9;&#x30C8;&#x30A8;&#x30C7;&#x30A3;&#x30BF;&#x306F;3&#x7A2E;&#x985E;&#x3057;&#x304B;&#x7121;&#x3044;&#x3002;Vim&#x304B;Emacs&#x304B;&#x305D;&#x308C;&#x4EE5;&#x5916;&#x3060;&#x3002;</code></li>
-<li>&#x3042;&#x3068;VSCode&#x3082;&#x305D;&#x308C;&#x306A;&#x308A;&#x306B;&#x4F7F;&#x3063;&#x3066;&#x307E;&#x3059;</li>
-</ul>
-</li>
-<li>&#x30A8;&#x30CA;&#x30B8;&#x30FC;&#x306F;&#x30E2;&#x30F3;&#x30B9;&#x30BF;&#x30FC;&#x6D3E;
-<ul>
-<li>&#x3042;&#x3068;&#x30B3;&#x30FC;&#x30D2;&#x30FC;&#x3088;&#x308A;&#x7D05;&#x8336;&#x6D3E;</li>
-<li>&#x8D85;&#x7518;&#x515A;</li>
-</ul>
-</li>
-<li>&#x79C1;&#x306E;&#x4EE3;&#x540D;&#x8A5E;&#x3067;&#x3042;&#x308B;&#x30C8;&#x30E9;&#x30F3;&#x30D7;
-<ul>
-<li>&#x3061;&#x3087;&#x3063;&#x3068;&#x30DE;&#x30B8;&#x30C3;&#x30AF;&#x3067;&#x304D;&#x308B;</li>
-<li>&#x30AB;&#x30FC;&#x30C7;&#x30A3;&#x30B9;&#x30C8;&#x30EA;&#x30FC;/&#x30D5;&#x30E9;&#x30EA;&#x30C3;&#x30B7;&#x30E5;&#x304C;&#x30E1;&#x30A4;&#x30F3;</li>
-</ul>
-</li>
-<li>&#x79C1;&#x306E;&#x4EE3;&#x540D;&#x8A5E;&#x304B;&#x3082;&#x3057;&#x308C;&#x306A;&#x3044;&#x30B9;&#x30FC;&#x30C4;
-<ul>
-<li>&#x79C1;&#x670D;&#x304C;&#x7121;&#x3044;&#x306E;&#x3067;&#x30A4;&#x30D9;&#x30F3;&#x30C8;&#x306F;&#x3060;&#x3044;&#x305F;&#x3044;&#x30B9;&#x30FC;&#x30C4;</li>
-</ul>
-</li>
-</ul>
-<h2 class="mume-header" id="performance">Performance</h2>
-
-<p>&#x3044;&#x308D;&#x3044;&#x308D;&#x3042;&#x308B;&#x306E;&#x3067;&#x305D;&#x306E;&#x3046;&#x3061;&#x8FFD;&#x8A18;</p>
-<blockquote>
-<p>[name=&#x672B;&#x7530;&#x8CB4;&#x4E00;]</p>
-</blockquote>
-
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TerfnoDesk</title>
+    <!-- JQuery読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- BootstrapCSS読み込み -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- BootstrapJS読み込み -->
+    <script src="js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <header style="background-color:gray;">
+      <div>
+        Header
       </div>
-      
-      
-    
-    
-    
-    
-    
-    
-    
-    
-  
-    </body></html>
+      <div>
+        <header style="background-color: lightgray;">
+          この中にHeaderもう一個ぶっこんだらどうなるの
+        </header>
+      </div>
+    </header>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-4" style="background-color:lightpink;">
+              <div>
+                マジ<strong>卍</strong>
+              </div>
+              <div>
+                fuck you
+              </div>
+            </div>
+            <div class="col-sm-4" style="background-color:lightblue;">卍</div>
+            <div class="col-sm-4" style="background-color:lightgreen;">卍</div>
+          </div>
+        </div>
+        <div class="col-sm-2" style="background-color:red;">Red</div>
+        <div class="col-sm-8" style="background-color:blue;">Blue</div>
+        <div class="col-sm-2" style="background-color:yellow;">Yellow</div>
+      </div>
+    </div>
+    <footer style="background-color:gray;">Footer</footer>
+  </body>
+</html>
