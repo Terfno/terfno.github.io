@@ -1,4 +1,4 @@
 # terfno.github.io
 がんばるぞい
 ## メモ
-なんとなく聞いたことあるBootstrapの3を導入してみた
+なんとなく聞いたことあるBootstrapの4を導入してみた
