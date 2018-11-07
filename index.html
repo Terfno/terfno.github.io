@@ -1,49 +1,237 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>TerfnoDesk</title>
-    <!-- JQuery読み込み -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- BootstrapCSS読み込み -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- BootstrapJS読み込み -->
-    <script src="js/bootstrap.min.js"></script>
-  </head>
-  <body>
-    <header style="background-color:gray;">
-      <div>
-        Header
-      </div>
-      <div>
-        <header style="background-color: lightgray;">
-          この中にHeaderもう一個ぶっこんだらどうなるの
-        </header>
-      </div>
-    </header>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-sm-4" style="background-color:lightpink;">
-              <div>
-                マジ<strong>卍</strong>
-              </div>
-              <div>
-                fuck you
-              </div>
-            </div>
-            <div class="col-sm-4" style="background-color:lightblue;">卍</div>
-            <div class="col-sm-4" style="background-color:lightgreen;">卍</div>
-          </div>
-        </div>
-        <div class="col-sm-2" style="background-color:red;">Red</div>
-        <div class="col-sm-8" style="background-color:blue;">Blue</div>
-        <div class="col-sm-2" style="background-color:yellow;">Yellow</div>
-      </div>
-    </div>
-    <footer style="background-color:gray;">Footer</footer>
-  </body>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>TerfnoDesk</title>
+		<!-- JQuery読み込み -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+		<!-- BootstrapCSS読み込み -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!-- BootstrapJS読み込み -->
+		<script src="js/bootstrap.min.js"></script>
+
+		<!-- fullPage.jsCSS読み込み -->
+		<link href="css/fullpage.css" rel="stylesheet">
+		<!-- fullPage.jsJS読み込み -->
+		<script src="js/fullpage.js"></script>
+
+		<script src=js/contents.js></script>
+	</head>
+	<body>
+			<!-- <nav>
+				<ul>
+					<li>top</li>
+					<li>procon</li>
+					<li>movie</li>
+					<li>design</li>
+					<li>other</li>
+					<li>contact</li>
+				</ul>
+			</nav> -->
+			<main id="fullpage">
+				<div class="section" style="background-color: lightseagreen">
+					<h2>1つ目のSection</h2>
+					<p>hogehoge</p>
+					<div class="container-fluid">
+						<div class="row">
+							<div class="container-fluid">
+								<div class="row">
+									<div class="col-sm-4" style="background-color:lightpink;">
+									<div>
+										マジ<strong>卍</strong>
+									</div>
+									<div>
+										fuck you
+									</div>
+									</div>
+									<div class="col-sm-4" style="background-color:lightblue;">卍</div>
+									<div class="col-sm-4" style="background-color:lightgreen;">卍</div>
+								</div>
+							</div>
+							<div class="col-sm-2" style="background-color:red;">Red</div>
+							<div class="col-sm-8" style="background-color:blue;">Blue</div>
+							<div class="col-sm-2" style="background-color:yellow;">Yellow</div>
+						</div>
+					</div>
+				</div>
+				<div class="section" style="background-color: lightpink">
+					<h2>2つ目のSection</h2>
+					<p>hugahuga</p>
+					<div class="slide" style="background-color: deeppink">
+						<h3>2つ目のSectionの1つ目のSlide</h3>
+						<p>slideだああああああああ</p>
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-sm-4" style="background-color: lightpink">
+									<h4>テスト</h4>
+									<p>テストだぴょーん</p>
+								</div>
+								<div class="col-sm-4" style="background-color: lightblue">
+									<h4>テスト</h4>
+									<p>テストだぴょーん</p>
+								</div>
+								<div class="col-sm-4" style="background-color: lightpink">
+									<h4>テスト</h4>
+									<p>テストだぴょーん</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="slide" style="background-color: deepskyblue">
+						<h3>2つ目のSectionの2つ目のSlide</h3>
+						<p>オラオラオラオラ</p>
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-sm-6" style="background-color: greenyellow">
+									<h4>さらなるテストじゃオラァ</h4>
+									<div class="row">
+										<div class="col-sm-4" style="background-color: lightpink">
+											<h5>テスト</h5>
+											<p>テストだぴょーん</p>
+										</div>
+										<div class="col-sm-4" style="background-color: lightblue">
+											<h5>テスト</h5>
+											<p>テストだぴょーん</p>
+										</div>
+										<div class="col-sm-4" style="background-color: lightpink">
+											<h5>テスト</h5>
+											<p>テストだぴょーん</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2" style="background-color: green">
+									<h4>さらなるテストのテストじゃい</h4>
+								</div>
+								<div class="col-sm-4" style="background-color: greenyellow">
+									<h4>さらなるテストのテストのテストじゃい</h4>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="slide" style="background-color: deeppink">
+						<h3>2つ目のSectionの3つ目のSlide</h3>
+						<p>うわあああああああああああああ</p>
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-sm-6" style="background-color: greenyellow">
+									<h4>もっとテストじゃオラァ</h4>
+									<div class="row">
+										<div class="col-sm-4" style="background-color: lightpink">
+											<h5>テスト</h5>
+											<p>テストだぴょーん</p>
+											<div class="row">
+												<div class="col-sm-6" style="background-color: gray">
+													<h6>卍テスト卍</h6>
+												</div>
+												<div class="col-sm-6" style="background-color: lightgray">
+													<h6>卍テスト卍</h6>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-4" style="background-color: lightblue">
+											<h5>テスト</h5>
+											<p>テストだぴょーん</p>
+											<div class="row">
+												<div class="col-sm-6" style="background-color: gray">
+													<h6>卍テスト卍</h6>
+												</div>
+												<div class="col-sm-6" style="background-color: lightgray">
+													<h6>卍テスト卍</h6>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-4" style="background-color: lightpink">
+											<h5>テスト</h5>
+											<p>テストだぴょーん</p>
+											<div class="row">
+												<div class="col-sm-6" style="background-color: gray">
+													<h6>卍テスト卍</h6>
+												</div>
+												<div class="col-sm-6" style="background-color: lightgray">
+													<h6>卍テスト卍</h6>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2" style="background-color: green">
+									<h4>さらなるテストのテストじゃい</h4>
+									<div class="row">
+										<div class="col-sm-6" style="background-color: gray">
+											<h6>卍テスト卍</h6>
+											<div class="row">
+												<div class="col-sm-6" style="background-color: gray">
+													<h6>卍テスト卍</h6>
+													<div class="row">
+														<div class="col-sm-6" style="background-color: gray">
+															<h6>卍テスト卍</h6>
+														</div>
+														<div class="col-sm-6" style="background-color: lightgray">
+															<h6>卍テスト卍</h6>
+														</div>
+													</div>
+												</div>
+												<div class="col-sm-6" style="background-color: lightgray">
+													<h6>卍テスト卍</h6>
+													<div class="row">
+														<div class="col-sm-6" style="background-color: gray">
+															<h6>卍テスト卍</h6>
+														</div>
+														<div class="col-sm-6" style="background-color: lightgray">
+															<h6>卍テスト卍</h6>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-6" style="background-color: lightgray">
+											<h6>卍テスト卍</h6>
+											<div class="row">
+												<div class="col-sm-6" style="background-color: gray">
+													<h6>卍テスト卍</h6>
+													<div class="row">
+														<div class="col-sm-6" style="background-color: gray">
+															<h6>卍テスト卍</h6>
+														</div>
+														<div class="col-sm-6" style="background-color: lightgray">
+															<h6>卍テスト卍</h6>
+														</div>
+													</div>
+												</div>
+												<div class="col-sm-6" style="background-color: lightgray">
+													<h6>卍テスト卍</h6>
+													<div class="row">
+														<div class="col-sm-6" style="background-color: gray">
+															<h6>卍テスト卍</h6>
+														</div>
+														<div class="col-sm-6" style="background-color: lightgray">
+															<h6>卍テスト卍</h6>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-4" style="background-color: greenyellow">
+									<h4>さらなるテストのテストのテストじゃい</h4>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="section" style="background-color: lightcyan">
+					<h2>3つ目のSection</h2>
+					<p>hogehuga</p>
+				</div>
+				<div class="section" style="background-color: lightgoldenrodyellow">
+					<h2>4つ目のSection</h2>
+					<p>piyopiyo</p>
+				</div>
+			</main>
+			<footer></footer>
+	</body>
 </html>
