@@ -1,4 +1,20 @@
 # Takahito Sueda
+## Contact me
+### Address
+556-1, Nishishimo, Tsuyama City, Okayama Prefectur 708-1225, Japan
+### Mail address
+gmail : sueda.takahito@gmail.com
+outlook : suedatakahito@outlook.jp
+office365 : b-suedat@tsuyama.kosen-ac.jp
+### Post
+Facebook : [takahito.sueda](https://www.facebook.com/takahito.sueda)
+Twitter : [てるふの](https://twitter.com/terfno_mai)
+Linkedin : [末田 貴一](https://www.linkedin.com/in/suedatakahito/)
+GitHub : [Terfno](https://github.com/Terfno)
+YouTube : [Terfno](https://www.youtube.com/channel/UCxkKHEReWImVnREwRFXGYWg?view_as=subscriber)
+Discord : Terfno(#8993)
+blog(club) : [sysken.org](https://sysken.org/blog/author/Terfno)
+medium : [@terfno](https://medium.com/@terfno)
 ## about me
 ### My name is ...
 末田貴一 (Sueda Takahito) です。
@@ -33,15 +49,15 @@ TwitterやSlackではTerfno（てるふの）と名乗っています。
 ### What I am doing
 #### 津山高専システム研究部に所属しています。
 ##### #procon28
-procon28ではスポーツ運営をトータルにサポートするものを立案、市場調査し、先輩と仲間5名で製作しました。中でも対戦表生成アルゴリズムとトーナメントにおける順位決定アルゴリズムを担当しました。
-参加記事：[第２８回プログラミングコンテスト【課題部門】](https://sysken.org/blog/4323/) written by my friend glatan.
+procon28ではスポーツ運営をトータルにサポートするものを立案、市場調査し、先輩と仲間5名で製作しました。中でも対戦表生成アルゴリズムとトーナメントにおける順位決定アルゴリズムを担当しました。[^1]
+[^1]:参加記事：[第２８回プログラミングコンテスト【課題部門】](https://sysken.org/blog/4323/) written by my friend glatan.
 ##### #procon29
-procon29では自治体の放送する音声情報を聾者、盲聾者に伝えるものを実際に真庭市を訪問し先輩と仲間+助っ人の6名で製作しました。私はPM、PL、プレゼン、デザインを担当しました。
-参加記事1：[#procon29 に参戦した話](https://medium.com/@terfno/procon29-に参戦した話-2a842508d471) wiritten by me.
-参加記事2：[第29回全国高専プログラミングコンテストに参加しました](https://blog.millenary.net/?p=69) written by my friend  縣 .
+procon29では自治体の放送する音声情報を聾者、盲聾者に伝えるものを実際に真庭市を訪問し先輩と仲間+助っ人の6名で製作しました。私はPM、PL、プレゼン、デザインを担当しました。[^2][^3]
+[^2]:参加記事：[#procon29 に参戦した話](https://medium.com/@terfno/procon29-に参戦した話-2a842508d471) wiritten by me.
+[^3]:参加記事：[第29回全国高専プログラミングコンテストに参加しました](https://blog.millenary.net/?p=69) written by my friend  縣 .
 ##### 未踏ジュニア
-2018年の未踏ジュニアでVRにおけるECの在り方というプロジェクトで採択されていました。最終的にスーパークリエーターには選ばれませんでしたが3つのプロトタイプを製作し、それを発表することができました。
-参加記事：[未踏ジュニアを修了したので振り返る](https://medium.com/@terfno/未踏ジュニアを修了したので振り返る-3c62c3119094) written by me.
+2018年の未踏ジュニアでVRにおけるECの在り方というプロジェクトで採択されていました。最終的にスーパークリエーターには選ばれませんでしたが3つのプロトタイプを製作し、それを発表することができました。[^4]
+[^4]:参加記事：[未踏ジュニアを修了したので振り返る](https://medium.com/@terfno/未踏ジュニアを修了したので振り返る-3c62c3119094) written by me.
 ##### 他にも勉強中
 他にも学校の弥生祭に作品を出したり、自作PCをしたり、動画を作ったり、メディアアートに挑戦したりしています。
 Rubyは勉強中ですが、記述の雰囲気が一番好きなのでもっと各種フレームワークを含めて理解を深めたいと思っています。
@@ -77,20 +93,3 @@ H&Kのデザインが好きです。
   * スーツ
     * 服装は2択。スーツかそれ以外。
     * イベントはだいたいスーツなのでMixiの人事の人が`?????`ってなるのもわかる。
-
-## Contact me
-### Address
-556-1, Nishishimo, Tsuyama City, Okayama Prefectur 708-1225, Japan
-### Mail address
-gmail : sueda.takahito@gmail.com
-outlook : suedatakahito@outlook.jp
-office365 : b-suedat@tsuyama.kosen-ac.jp
-### SNS
-Facebook : [takahito.sueda](https://www.facebook.com/takahito.sueda)
-Twitter : [てるふの](https://twitter.com/terfno_mai)
-Linkedin : [末田 貴一](https://www.linkedin.com/in/suedatakahito/)
-GitHub : [Terfno](https://github.com/Terfno)
-YouTube : [Terfno](https://www.youtube.com/channel/UCxkKHEReWImVnREwRFXGYWg?view_as=subscriber)
-Discord : Terfno(#8993)
-blog(club) : [sysken.org](https://sysken.org/blog/author/Terfno)
-medium : [@terfno](https://medium.com/@terfno)
