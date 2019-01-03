@@ -1,897 +1,380 @@
 <!DOCTYPE html>
 <html>
+	<head>
+	  <title>terfnoDesk</title>
+	  <link rel="icon" href="http://www.gravatar.com/avatar/2fda10ff8dccf267309cb551841e96c0">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:////Users/terfno/.vscode/extensions/shd101wyy.markdown-preview-enhanced-0.3.11/node_modules/@shd101wyy/mume/dependencies/katex/katex.min.css">
 
-<head>
-	<title>TerfnoDesk</title>
-	<link rel="icon" href="http://www.gravatar.com/avatar/2fda10ff8dccf267309cb551841e96c0">
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	<link rel="stylesheet" href="file:////Users/terfno/.vscode/extensions/shd101wyy.markdown-preview-enhanced-0.3.11/node_modules/@shd101wyy/mume/dependencies/katex/katex.min.css">
-
-
-
-
-
-
-
-
-
-
-	<style>
-		/**
+      <style> 
+      /**
  * prism.js Github theme based on GitHub's theme.
  * @author Sam Clarke
  */
-		code[class*="language-"],
-		pre[class*="language-"] {
-			color: #333;
-			background: none;
-			font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
-			text-align: left;
-			white-space: pre;
-			word-spacing: normal;
-			word-break: normal;
-			word-wrap: normal;
-			line-height: 1.4;
-
-			-moz-tab-size: 8;
-			-o-tab-size: 8;
-			tab-size: 8;
-
-			-webkit-hyphens: none;
-			-moz-hyphens: none;
-			-ms-hyphens: none;
-			hyphens: none;
-		}
-
-		/* Code blocks */
-		pre[class*="language-"] {
-			padding: .8em;
-			overflow: auto;
-			/* border: 1px solid #ddd; */
-			border-radius: 3px;
-			/* background: #fff; */
-			background: #f5f5f5;
-		}
-
-		/* Inline code */
-		:not(pre)>code[class*="language-"] {
-			padding: .1em;
-			border-radius: .3em;
-			white-space: normal;
-			background: #f5f5f5;
-		}
-
-		.token.comment,
-		.token.blockquote {
-			color: #969896;
-		}
-
-		.token.cdata {
-			color: #183691;
-		}
-
-		.token.doctype,
-		.token.punctuation,
-		.token.variable,
-		.token.macro.property {
-			color: #333;
-		}
-
-		.token.operator,
-		.token.important,
-		.token.keyword,
-		.token.rule,
-		.token.builtin {
-			color: #a71d5d;
-		}
-
-		.token.string,
-		.token.url,
-		.token.regex,
-		.token.attr-value {
-			color: #183691;
-		}
-
-		.token.property,
-		.token.number,
-		.token.boolean,
-		.token.entity,
-		.token.atrule,
-		.token.constant,
-		.token.symbol,
-		.token.command,
-		.token.code {
-			color: #0086b3;
-		}
-
-		.token.tag,
-		.token.selector,
-		.token.prolog {
-			color: #63a35c;
-		}
-
-		.token.function,
-		.token.namespace,
-		.token.pseudo-element,
-		.token.class,
-		.token.class-name,
-		.token.pseudo-class,
-		.token.id,
-		.token.url-reference .token.variable,
-		.token.attr-name {
-			color: #795da3;
-		}
-
-		.token.entity {
-			cursor: help;
-		}
-
-		.token.title,
-		.token.title .token.punctuation {
-			font-weight: bold;
-			color: #1d3e81;
-		}
-
-		.token.list {
-			color: #ed6a43;
-		}
-
-		.token.inserted {
-			background-color: #eaffea;
-			color: #55a532;
-		}
-
-		.token.deleted {
-			background-color: #ffecec;
-			color: #bd2c00;
-		}
-
-		.token.bold {
-			font-weight: bold;
-		}
-
-		.token.italic {
-			font-style: italic;
-		}
-
-
-		/* JSON */
-		.language-json .token.property {
-			color: #183691;
-		}
-
-		.language-markup .token.tag .token.punctuation {
-			color: #333;
-		}
-
-		/* CSS */
-		code.language-css,
-		.language-css .token.function {
-			color: #0086b3;
-		}
-
-		/* YAML */
-		.language-yaml .token.atrule {
-			color: #63a35c;
-		}
-
-		code.language-yaml {
-			color: #183691;
-		}
-
-		/* Ruby */
-		.language-ruby .token.function {
-			color: #333;
-		}
-
-		/* Markdown */
-		.language-markdown .token.url {
-			color: #795da3;
-		}
-
-		/* Makefile */
-		.language-makefile .token.symbol {
-			color: #795da3;
-		}
-
-		.language-makefile .token.variable {
-			color: #183691;
-		}
-
-		.language-makefile .token.builtin {
-			color: #0086b3;
-		}
-
-		/* Bash */
-		.language-bash .token.keyword {
-			color: #0086b3;
-		}
-
-		html body {
-			font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
-			font-size: 16px;
-			line-height: 1.6;
-			color: #333;
-			background-color: #fff;
-			overflow: initial;
-			box-sizing: border-box;
-			word-wrap: break-word
-		}
-
-		html body>:first-child {
-			margin-top: 0
-		}
-
-		html body h1,
-		html body h2,
-		html body h3,
-		html body h4,
-		html body h5,
-		html body h6 {
-			line-height: 1.2;
-			margin-top: 1em;
-			margin-bottom: 16px;
-			color: #000
-		}
-
-		html body h1 {
-			font-size: 2.25em;
-			font-weight: 300;
-			padding-bottom: .3em
-		}
-
-		html body h2 {
-			font-size: 1.75em;
-			font-weight: 400;
-			padding-bottom: .3em
-		}
-
-		html body h3 {
-			font-size: 1.5em;
-			font-weight: 500
-		}
-
-		html body h4 {
-			font-size: 1.25em;
-			font-weight: 600
-		}
-
-		html body h5 {
-			font-size: 1.1em;
-			font-weight: 600
-		}
-
-		html body h6 {
-			font-size: 1em;
-			font-weight: 600
-		}
-
-		html body h1,
-		html body h2,
-		html body h3,
-		html body h4,
-		html body h5 {
-			font-weight: 600
-		}
-
-		html body h5 {
-			font-size: 1em
-		}
-
-		html body h6 {
-			color: #5c5c5c
-		}
-
-		html body strong {
-			color: #000
-		}
-
-		html body del {
-			color: #5c5c5c
-		}
-
-		html body a:not([href]) {
-			color: inherit;
-			text-decoration: none
-		}
-
-		html body a {
-			color: #08c;
-			text-decoration: none
-		}
-
-		html body a:hover {
-			color: #00a3f5;
-			text-decoration: none
-		}
-
-		html body img {
-			max-width: 100%
-		}
-
-		html body>p {
-			margin-top: 0;
-			margin-bottom: 16px;
-			word-wrap: break-word
-		}
-
-		html body>ul,
-		html body>ol {
-			margin-bottom: 16px
-		}
-
-		html body ul,
-		html body ol {
-			padding-left: 2em
-		}
-
-		html body ul.no-list,
-		html body ol.no-list {
-			padding: 0;
-			list-style-type: none
-		}
-
-		html body ul ul,
-		html body ul ol,
-		html body ol ol,
-		html body ol ul {
-			margin-top: 0;
-			margin-bottom: 0
-		}
-
-		html body li {
-			margin-bottom: 0
-		}
-
-		html body li.task-list-item {
-			list-style: none
-		}
-
-		html body li>p {
-			margin-top: 0;
-			margin-bottom: 0
-		}
-
-		html body .task-list-item-checkbox {
-			margin: 0 .2em .25em -1.8em;
-			vertical-align: middle
-		}
-
-		html body .task-list-item-checkbox:hover {
-			cursor: pointer
-		}
-
-		html body blockquote {
-			margin: 16px 0;
-			font-size: inherit;
-			padding: 0 15px;
-			color: #5c5c5c;
-			border-left: 4px solid #d6d6d6
-		}
-
-		html body blockquote>:first-child {
-			margin-top: 0
-		}
-
-		html body blockquote>:last-child {
-			margin-bottom: 0
-		}
-
-		html body hr {
-			height: 4px;
-			margin: 32px 0;
-			background-color: #d6d6d6;
-			border: 0 none
-		}
-
-		html body table {
-			margin: 10px 0 15px 0;
-			border-collapse: collapse;
-			border-spacing: 0;
-			display: block;
-			width: 100%;
-			overflow: auto;
-			word-break: normal;
-			word-break: keep-all
-		}
-
-		html body table th {
-			font-weight: bold;
-			color: #000
-		}
-
-		html body table td,
-		html body table th {
-			border: 1px solid #d6d6d6;
-			padding: 6px 13px
-		}
-
-		html body dl {
-			padding: 0
-		}
-
-		html body dl dt {
-			padding: 0;
-			margin-top: 16px;
-			font-size: 1em;
-			font-style: italic;
-			font-weight: bold
-		}
-
-		html body dl dd {
-			padding: 0 16px;
-			margin-bottom: 16px
-		}
-
-		html body code {
-			font-family: Menlo, Monaco, Consolas, 'Courier New', monospace;
-			font-size: .85em !important;
-			color: #000;
-			background-color: #f0f0f0;
-			border-radius: 3px;
-			padding: .2em 0
-		}
-
-		html body code::before,
-		html body code::after {
-			letter-spacing: -0.2em;
-			content: "\00a0"
-		}
-
-		html body pre>code {
-			padding: 0;
-			margin: 0;
-			font-size: .85em !important;
-			word-break: normal;
-			white-space: pre;
-			background: transparent;
-			border: 0
-		}
-
-		html body .highlight {
-			margin-bottom: 16px
-		}
-
-		html body .highlight pre,
-		html body pre {
-			padding: 1em;
-			overflow: auto;
-			font-size: .85em !important;
-			line-height: 1.45;
-			border: #d6d6d6;
-			border-radius: 3px
-		}
-
-		html body .highlight pre {
-			margin-bottom: 0;
-			word-break: normal
-		}
-
-		html body pre code,
-		html body pre tt {
-			display: inline;
-			max-width: initial;
-			padding: 0;
-			margin: 0;
-			overflow: initial;
-			line-height: inherit;
-			word-wrap: normal;
-			background-color: transparent;
-			border: 0
-		}
-
-		html body pre code:before,
-		html body pre tt:before,
-		html body pre code:after,
-		html body pre tt:after {
-			content: normal
-		}
-
-		html body p,
-		html body blockquote,
-		html body ul,
-		html body ol,
-		html body dl,
-		html body pre {
-			margin-top: 0;
-			margin-bottom: 16px
-		}
-
-		html body kbd {
-			color: #000;
-			border: 1px solid #d6d6d6;
-			border-bottom: 2px solid #c7c7c7;
-			padding: 2px 4px;
-			background-color: #f0f0f0;
-			border-radius: 3px
-		}
-
-		@media print {
-			html body {
-				background-color: #fff
-			}
-
-			html body h1,
-			html body h2,
-			html body h3,
-			html body h4,
-			html body h5,
-			html body h6 {
-				color: #000;
-				page-break-after: avoid
-			}
-
-			html body blockquote {
-				color: #5c5c5c
-			}
-
-			html body pre {
-				page-break-inside: avoid
-			}
-
-			html body table {
-				display: table
-			}
-
-			html body img {
-				display: block;
-				max-width: 100%;
-				max-height: 100%
-			}
-
-			html body pre,
-			html body code {
-				word-wrap: break-word;
-				white-space: pre
-			}
-		}
-
-		.markdown-preview {
-			width: 100%;
-			height: 100%;
-			box-sizing: border-box
-		}
-
-		.markdown-preview .pagebreak,
-		.markdown-preview .newpage {
-			page-break-before: always
-		}
-
-		.markdown-preview pre.line-numbers {
-			position: relative;
-			padding-left: 3.8em;
-			counter-reset: linenumber
-		}
-
-		.markdown-preview pre.line-numbers>code {
-			position: relative
-		}
-
-		.markdown-preview pre.line-numbers .line-numbers-rows {
-			position: absolute;
-			pointer-events: none;
-			top: 1em;
-			font-size: 100%;
-			left: 0;
-			width: 3em;
-			letter-spacing: -1px;
-			border-right: 1px solid #999;
-			-webkit-user-select: none;
-			-moz-user-select: none;
-			-ms-user-select: none;
-			user-select: none
-		}
-
-		.markdown-preview pre.line-numbers .line-numbers-rows>span {
-			pointer-events: none;
-			display: block;
-			counter-increment: linenumber
-		}
-
-		.markdown-preview pre.line-numbers .line-numbers-rows>span:before {
-			content: counter(linenumber);
-			color: #999;
-			display: block;
-			padding-right: .8em;
-			text-align: right
-		}
-
-		.markdown-preview .mathjax-exps .MathJax_Display {
-			text-align: center !important
-		}
-
-		.markdown-preview:not([for="preview"]) .code-chunk .btn-group {
-			display: none
-		}
-
-		.markdown-preview:not([for="preview"]) .code-chunk .status {
-			display: none
-		}
-
-		.markdown-preview:not([for="preview"]) .code-chunk .output-div {
-			margin-bottom: 16px
-		}
-
-		.scrollbar-style::-webkit-scrollbar {
-			width: 8px
-		}
-
-		.scrollbar-style::-webkit-scrollbar-track {
-			border-radius: 10px;
-			background-color: transparent
-		}
-
-		.scrollbar-style::-webkit-scrollbar-thumb {
-			border-radius: 5px;
-			background-color: rgba(150, 150, 150, 0.66);
-			border: 4px solid rgba(150, 150, 150, 0.66);
-			background-clip: content-box
-		}
-
-		html body[for="html-export"]:not([data-presentation-mode]) {
-			position: relative;
-			width: 100%;
-			height: 100%;
-			top: 0;
-			left: 0;
-			margin: 0;
-			padding: 0;
-			overflow: auto
-		}
-
-		html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview {
-			position: relative;
-			top: 0
-		}
-
-		@media screen and (min-width:914px) {
-			html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview {
-				padding: 2em calc(50% - 457px)
-			}
-		}
-
-		@media screen and (max-width:914px) {
-			html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview {
-				padding: 2em
-			}
-		}
-
-		@media screen and (max-width:450px) {
-			html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview {
-				font-size: 14px !important;
-				padding: 1em
-			}
-		}
-
-		@media print {
-			html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn {
-				display: none
-			}
-		}
-
-		html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn {
-			position: fixed;
-			bottom: 8px;
-			left: 8px;
-			font-size: 28px;
-			cursor: pointer;
-			color: inherit;
-			z-index: 99;
-			width: 32px;
-			text-align: center;
-			opacity: .4
-		}
-
-		html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn {
-			opacity: 1
-		}
-
-		html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc {
-			position: fixed;
-			top: 0;
-			left: 0;
-			width: 300px;
-			height: 100%;
-			padding: 32px 0 48px 0;
-			font-size: 14px;
-			box-shadow: 0 0 4px rgba(150, 150, 150, 0.33);
-			box-sizing: border-box;
-			overflow: auto;
-			background-color: inherit
-		}
-
-		html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar {
-			width: 8px
-		}
-
-		html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track {
-			border-radius: 10px;
-			background-color: transparent
-		}
-
-		html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb {
-			border-radius: 5px;
-			background-color: rgba(150, 150, 150, 0.66);
-			border: 4px solid rgba(150, 150, 150, 0.66);
-			background-clip: content-box
-		}
-
-		html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a {
-			text-decoration: none
-		}
-
-		html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul {
-			padding: 0 1.6em;
-			margin-top: .8em
-		}
-
-		html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc li {
-			margin-bottom: .8em
-		}
-
-		html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul {
-			list-style-type: none
-		}
-
-		html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview {
-			left: 300px;
-			width: calc(100% - 300px);
-			padding: 2em calc(50% - 457px - 150px);
-			margin: 0;
-			box-sizing: border-box
-		}
-
-		@media screen and (max-width:1274px) {
-			html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview {
-				padding: 2em
-			}
-		}
-
-		@media screen and (max-width:450px) {
-			html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview {
-				width: 100%
-			}
-		}
-
-		html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview {
-			left: 50%;
-			transform: translateX(-50%)
-		}
-
-		html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc {
-			display: none
-		}
-
-		/* Please visit the URL below for more information: */
-		/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
-	</style>
-</head>
-
-<body for="html-export">
-	<div class="mume markdown-preview   ">
-		<h1 class="mume-header" id="takahito-sueda">Takahito Sueda</h1>
-
-		<h2 class="mume-header" id="contact-me">Contact me</h2>
-
-		<h3 class="mume-header" id="address">Address</h3>
-
-		<p>708-1225<br>
-			&#x5CA1;&#x5C71;&#x770C;&#x6D25;&#x5C71;&#x5E02;&#x897F;&#x4E0B;556-1</p>
-		<h3 class="mume-header" id="mail-address">Mail address</h3>
-
-		<p>gmail : <a href="mailto:sueda.takahito@gmail.com">sueda.takahito@gmail.com</a><br>
-			outlook : <a href="mailto:suedatakahito@outlook.jp">suedatakahito@outlook.jp</a><br>
-			office365 : <a href="mailto:b-suedat@tsuyama.kosen-ac.jp">b-suedat@tsuyama.kosen-ac.jp</a></p>
-		<h3 class="mume-header" id="sns">SNS</h3>
-
-		<p>Facebook : <a href="https://www.facebook.com/takahito.sueda">takahito.sueda</a><br>
-			Twitter : <a href="https://twitter.com/terfno_mai">Terfno</a><br>
-			Linkedin : <a href="https://www.linkedin.com/in/suedatakahito/">&#x672B;&#x7530; &#x8CB4;&#x4E00;</a><br>
-			Github : <a href="https://github.com/Terfno">Terfno</a><br>
-			Youtube : <a href="https://www.youtube.com/channel/UCxkKHEReWImVnREwRFXGYWg?view_as=subscriber">Terfno</a><br>
-			Discord : Terfno(#8993)</p>
-		<h3 class="mume-header" id="pgp-fingerprint">PGP Fingerprint</h3>
-
-		<p>72FA FEBD 0DA3 7E30 1F34 BC87 E8F9 B7AA CF23 B493</p>
-		<h2 class="mume-header" id="about-me">about me</h2>
-
-		<h3 class="mume-header" id="my-name-is">My name is ...</h3>
-
-		<p><a href="https://plus.google.com/u/0/104561188046823090278">&#x672B;&#x7530;&#x8CB4;&#x4E00;</a> (Sueda Takahito)
-			&#x3067;&#x3059;&#xFF0E;<br>
-			<a href="https://twitter.com/terfno_mai">Twitter</a>&#x3084;Slack&#x3067;&#x306F;Terfno
-			(&#x305F;&#x3041;&#x3063;&#x3075;&#x306E;) &#x3068;&#x540D;&#x4E57;&#x3063;&#x3066;&#x3044;&#x307E;&#x3059;&#xFF0E;</p>
-		<h3 class="mume-header" id="im-from">I&apos;m from ...</h3>
-
-		<p><a href="http://www.tsuyama-ct.ac.jp/">&#x6D25;&#x5C71;&#x9AD8;&#x5C02;</a>&#x306E;&#x4EBA;&#x9593;&#x3067;&#x3059;&#xFF0E;<br>
-			<a href="https://www.city.tsuyama.lg.jp/top.php">&#x6D25;&#x5C71;</a>&#x751F;&#x307E;&#x308C;&#x306E;&#x6D25;&#x5C71;&#x80B2;&#x3061;&#x3067;&#x3059;&#xFF0E;</p>
-		<h3 class="mume-header" id="what-i-am-doing">What I am doing</h3>
-
-		<ul>
-			<li>&#x6D25;&#x5C71;&#x9AD8;&#x5C02; &#x30B7;&#x30B9;&#x30C6;&#x30E0;&#x7814;&#x7A76;&#x90E8;
-				<ul>
-					<li>HP : <a href="https://sysken.org/">sysken online</a></li>
-					<li>Ruby&#x304C;&#x597D;&#x304D;</li>
-					<li>&#x6700;&#x8FD1;&#x306F;&#x30C7;&#x30B6;&#x30A4;&#x30F3;</li>
-				</ul>
-			</li>
-			<li>&#x30BD;&#x30D5;&#x30C8;&#x30C6;&#x30CB;&#x30B9;
-				<ul>
-					<li>&#x786C;&#x5F0F;&#x3082;&#x3061;&#x3087;&#x3063;&#x3068;&#x3067;&#x304D;&#x308B;&#x3088;</li>
-				</ul>
-			</li>
-			<li>&#x5C11;&#x6797;&#x5BFA;&#x62F3;&#x6CD5;
-				<ul>
-					<li>&#x521D;&#x6BB5;&#x3067;&#x3059;</li>
-				</ul>
-			</li>
-			<li>&#x30B5;&#x30D0;&#x30A4;&#x30D0;&#x30EB;&#x30B2;&#x30FC;&#x30E0;
-				<ul>
-					<li>&#x975E;&#x516C;&#x5F0F;&#x306A;&#x540C;&#x597D;&#x4F1A;&#x3092;&#x904B;&#x55B6;&#x3057;&#x3066;&#x307E;&#x3059;</li>
-					<li>HK&#x304C;&#x597D;&#x304D;</li>
-				</ul>
-			</li>
-			<li>DJ
-				<ul>
-					<li>rekordbox&#x4F7F;&#x3063;&#x3066;&#x307E;&#x3059;&#x3002;</li>
-					<li>&#x57FA;&#x672C;&#x7684;&#x306B;house&#x7CFB;&#x3060;&#x3051;&#x3069;dubstep&#x3082;&#x5927;&#x597D;&#x304D;&#xFF01;</li>
-					<li>DJ&#x306E;&#x3068;&#x304D;&#x306F;&#x3060;&#x3044;&#x305F;&#x3044;&#x30B9;&#x30FC;&#x30C4;&#x7740;&#x3066;&#x308B;</li>
-				</ul>
-			</li>
-		</ul>
-		<h3 class="mume-header" id="what-i-like">What I like</h3>
-
-		<ul>
-			<li>&#x30D6;&#x30E9;&#x30A6;&#x30B6;&#x306F;Opera
-				<ul>
-					<li>&#x3042;&#x3068;Vivaldi&#x3082;&#x597D;&#x304D;&#x3088;</li>
-				</ul>
-			</li>
-			<li>&#x30C6;&#x30AD;&#x30B9;&#x30C8;&#x30A8;&#x30C7;&#x30A3;&#x30BF;&#x306F;Vim
-				<ul>
-					<li><code>&#x4E16;&#x306E;&#x4E2D;&#x306B;&#x30C6;&#x30AD;&#x30B9;&#x30C8;&#x30A8;&#x30C7;&#x30A3;&#x30BF;&#x306F;3&#x7A2E;&#x985E;&#x3057;&#x304B;&#x7121;&#x3044;&#x3002;Vim&#x304B;Emacs&#x304B;&#x305D;&#x308C;&#x4EE5;&#x5916;&#x3060;&#x3002;</code></li>
-					<li>&#x3042;&#x3068;VSCode&#x3082;&#x305D;&#x308C;&#x306A;&#x308A;&#x306B;&#x4F7F;&#x3063;&#x3066;&#x307E;&#x3059;</li>
-				</ul>
-			</li>
-			<li>&#x30A8;&#x30CA;&#x30B8;&#x30FC;&#x306F;&#x30E2;&#x30F3;&#x30B9;&#x30BF;&#x30FC;&#x6D3E;
-				<ul>
-					<li>&#x3042;&#x3068;&#x30B3;&#x30FC;&#x30D2;&#x30FC;&#x3088;&#x308A;&#x7D05;&#x8336;&#x6D3E;</li>
-					<li>&#x8D85;&#x7518;&#x515A;</li>
-				</ul>
-			</li>
-			<li>&#x79C1;&#x306E;&#x4EE3;&#x540D;&#x8A5E;&#x3067;&#x3042;&#x308B;&#x30C8;&#x30E9;&#x30F3;&#x30D7;
-				<ul>
-					<li>&#x3061;&#x3087;&#x3063;&#x3068;&#x30DE;&#x30B8;&#x30C3;&#x30AF;&#x3067;&#x304D;&#x308B;</li>
-					<li>&#x30AB;&#x30FC;&#x30C7;&#x30A3;&#x30B9;&#x30C8;&#x30EA;&#x30FC;/&#x30D5;&#x30E9;&#x30EA;&#x30C3;&#x30B7;&#x30E5;&#x304C;&#x30E1;&#x30A4;&#x30F3;</li>
-				</ul>
-			</li>
-			<li>&#x79C1;&#x306E;&#x4EE3;&#x540D;&#x8A5E;&#x304B;&#x3082;&#x3057;&#x308C;&#x306A;&#x3044;&#x30B9;&#x30FC;&#x30C4;
-				<ul>
-					<li>&#x79C1;&#x670D;&#x304C;&#x7121;&#x3044;&#x306E;&#x3067;&#x30A4;&#x30D9;&#x30F3;&#x30C8;&#x306F;&#x3060;&#x3044;&#x305F;&#x3044;&#x30B9;&#x30FC;&#x30C4;</li>
-				</ul>
-			</li>
-		</ul>
-		<h2 class="mume-header" id="performance">Performance</h2>
-
-		<p>&#x3044;&#x308D;&#x3044;&#x308D;&#x3042;&#x308B;&#x306E;&#x3067;&#x305D;&#x306E;&#x3046;&#x3061;&#x8FFD;&#x8A18;</p>
-		<blockquote>
-			<p>[name=&#x672B;&#x7530;&#x8CB4;&#x4E00;]</p>
-		</blockquote>
-
-	</div>
-
-
-
-
-
-
-
-
-
-
-
-</body>
-
-</html>
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #333;
+  background: none;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.4;
+
+  -moz-tab-size: 8;
+  -o-tab-size: 8;
+  tab-size: 8;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: .8em;
+  overflow: auto;
+  /* border: 1px solid #ddd; */
+  border-radius: 3px;
+  /* background: #fff; */
+  background: #f5f5f5;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
+  background: #f5f5f5;
+}
+
+.token.comment,
+.token.blockquote {
+  color: #969896;
+}
+
+.token.cdata {
+  color: #183691;
+}
+
+.token.doctype,
+.token.punctuation,
+.token.variable,
+.token.macro.property {
+  color: #333;
+}
+
+.token.operator,
+.token.important,
+.token.keyword,
+.token.rule,
+.token.builtin {
+  color: #a71d5d;
+}
+
+.token.string,
+.token.url,
+.token.regex,
+.token.attr-value {
+  color: #183691;
+}
+
+.token.property,
+.token.number,
+.token.boolean,
+.token.entity,
+.token.atrule,
+.token.constant,
+.token.symbol,
+.token.command,
+.token.code {
+  color: #0086b3;
+}
+
+.token.tag,
+.token.selector,
+.token.prolog {
+  color: #63a35c;
+}
+
+.token.function,
+.token.namespace,
+.token.pseudo-element,
+.token.class,
+.token.class-name,
+.token.pseudo-class,
+.token.id,
+.token.url-reference .token.variable,
+.token.attr-name {
+  color: #795da3;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.token.title,
+.token.title .token.punctuation {
+  font-weight: bold;
+  color: #1d3e81;
+}
+
+.token.list {
+  color: #ed6a43;
+}
+
+.token.inserted {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.token.deleted {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+
+/* JSON */
+.language-json .token.property {
+  color: #183691;
+}
+
+.language-markup .token.tag .token.punctuation {
+  color: #333;
+}
+
+/* CSS */
+code.language-css,
+.language-css .token.function {
+  color: #0086b3;
+}
+
+/* YAML */
+.language-yaml .token.atrule {
+  color: #63a35c;
+}
+
+code.language-yaml {
+  color: #183691;
+}
+
+/* Ruby */
+.language-ruby .token.function {
+  color: #333;
+}
+
+/* Markdown */
+.language-markdown .token.url {
+  color: #795da3;
+}
+
+/* Makefile */
+.language-makefile .token.symbol {
+  color: #795da3;
+}
+
+.language-makefile .token.variable {
+  color: #183691;
+}
+
+.language-makefile .token.builtin {
+  color: #0086b3;
+}
+
+/* Bash */
+.language-bash .token.keyword {
+  color: #0086b3;
+}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{padding:0 1.6em;margin-top:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc li{margin-bottom:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{list-style-type:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  150px);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+ 
+      </style>
+    </head>
+    <body for="html-export">
+      <div class="mume markdown-preview   ">
+      <h1 class="mume-header" id="takahito-sueda">Takahito Sueda</h1>
+
+<h2 class="mume-header" id="about-me">about me</h2>
+
+<h3 class="mume-header" id="my-name-is">My name is ...</h3>
+
+<p>&#x672B;&#x7530;&#x8CB4;&#x4E00; (Sueda Takahito) &#x3067;&#x3059;&#x3002;<br>
+Twitter&#x3084;Slack&#x3067;&#x306F;Terfno&#xFF08;&#x3066;&#x308B;&#x3075;&#x306E;&#xFF09;&#x3068;&#x540D;&#x4E57;&#x3063;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;</p>
+<h3 class="mume-header" id="skill">Skill</h3>
+
+<ul>
+<li>Coding
+<ul>
+<li>C&#xFF1A;&#x6388;&#x696D;&#x3067;&#x4F7F;&#x3046;&#x7A0B;&#x5EA6;&#x306A;&#x3089;&#x554F;&#x984C;&#x306A;&#x304F;&#x66F8;&#x3051;&#x308B;&#x3051;&#x3069;&#x597D;&#x304D;&#x3058;&#x3083;&#x306A;&#x3044;&#x3002;</li>
+<li>C++&#xFF1A;DxLib&#x3092;&#x4E00;&#x77AC;&#x89E6;&#x3063;&#x305F;&#x3053;&#x3068;&#x3042;&#x308B;&#x3002;Siv3D&#x306B;&#x6311;&#x6226;&#x3057;&#x305F;&#x3044;&#x306A;&#x3041;&#x3068;&#x601D;&#x3044;&#x306A;&#x304C;&#x3089;&#x3067;&#x304D;&#x3066;&#x306A;&#x3044;&#x3002;</li>
+<li>C#&#xFF1A;Unity&#x7528;&#x306B;&#x52C9;&#x5F37;&#x3057;&#x305F;&#x3002;VR&#x306A;&#x3089;&#x591A;&#x5C11;&#x306F;&#x66F8;&#x3051;&#x308B;&#x304F;&#x3089;&#x3044;&#x3002;</li>
+<li>Python3&#xFF1A;&#x6280;&#x8853;&#x30C6;&#x30B9;&#x30C8;&#x3068;&#x304B;&#x9762;&#x5012;&#x304F;&#x3055;&#x3044;&#x3053;&#x3068;&#x306F;&#x3060;&#x3044;&#x305F;&#x3044;&#x3053;&#x308C;&#x306B;&#x983C;&#x308B;&#x3002;</li>
+<li>JavaScript&#xFF1A;Node.js&#x95A2;&#x9023;&#x3067;&#x3002;&#x591A;&#x5206;&#x81EA;&#x5206;&#x306E;&#x306A;&#x304B;&#x3067;1&#x756A;&#x304B;2&#x756A;&#x76EE;&#x306B;&#x66F8;&#x3051;&#x308B;&#x3002;&#x975E;&#x540C;&#x671F;&#x3042;&#x3093;&#x307E;&#x308A;&#x5206;&#x304B;&#x3063;&#x3066;&#x306A;&#x3044;&#x3002;</li>
+<li>Ruby&#xFF1A;&#x5165;&#x9580;&#x3057;&#x305F;&#x3002;&#x3081;&#x3063;&#x3061;&#x3083;&#x597D;&#x304D;&#x3002;&#x306A;&#x3093;&#x304B;&#x4F5C;&#x308D;&#x3046;&#x3068;&#x601D;&#x3046;&#x305F;&#x3073;&#x306B;&#x5019;&#x88DC;&#x3068;&#x3057;&#x3066;&#x6319;&#x3052;&#x308B;&#x304C;&#x9069;&#x5207;&#x3058;&#x3083;&#x306A;&#x3044;&#x3053;&#x3068;&#x304C;&#x3042;&#x308B;&#x306E;&#x3067;&#x306A;&#x3093;&#x3060;&#x304B;&#x3093;&#x3060;&#x66F8;&#x304B;&#x306A;&#x3044;&#x3002;&#x81EA;&#x5206;&#x306E;&#x30A2;&#x30A4;&#x30C7;&#x30A3;&#x30A2;&#x3068;&#x30B9;&#x30AD;&#x30EB;&#x304C;&#x565B;&#x307F;&#x5408;&#x3063;&#x3066;&#x306A;&#x3044;&#x8A3C;&#x62E0;&#x307F;&#x305F;&#x3044;&#x306A;&#x3082;&#x306E;&#x3002;</li>
+<li>HTML&#x3001;CSS&#xFF1A;haml&#x3068;&#x304B;&#x30E1;&#x30BF;CSS&#x3068;&#x304B;&#x3082;Rails&#x3068;&#x304B;Sinatra&#x306E;&#x95A2;&#x9023;&#x3067;&#x96F0;&#x56F2;&#x6C17;&#x308F;&#x304B;&#x308B;&#x3088;&#x3046;&#x306B;&#x306A;&#x3063;&#x305F;&#x3002;CSS&#x30A2;&#x30CB;&#x30E1;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x8208;&#x5473;&#x3042;&#x308B;&#x3002;</li>
+</ul>
+</li>
+<li>Design
+<ul>
+<li>Adobe Illustrator CC&#xFF1A;&#x3068;&#x308A;&#x3042;&#x3048;&#x305A;&#x3053;&#x308C;&#x306F;&#x4F7F;&#x3048;&#x308B;&#x3002;Photoshop&#x306F;&#x3042;&#x3093;&#x307E;&#x308A;&#x4F7F;&#x3048;&#x306A;&#x3044;&#x3002;</li>
+<li>Adobe Premiere Pro CC&#xFF1A;&#x52D5;&#x753B;&#x7DE8;&#x96C6;&#x6700;&#x8FD1;&#x3053;&#x308C;&#x3067;&#x3057;&#x3066;&#x308B;&#x3002;</li>
+<li>Adobe Premiere Rush CC&#xFF1A;&#x65C5;&#x884C;&#x306E;vlog&#x3068;&#x304B;&#x306F;&#x3053;&#x308C;&#x3067;&#x3057;&#x3066;&#x308B;&#x3002;</li>
+<li>Adobe After Effects CC&#xFF1A;&#x3042;&#x3093;&#x307E;&#x308A;&#x4F7F;&#x3048;&#x306A;&#x3044;&#x306E;&#x3067;&#x7DF4;&#x7FD2;&#x4E2D;&#x3002;&#x7406;&#x89E3;&#x3057;&#x305F;&#x3044;&#x3002;</li>
+<li>AviUtl&#xFF1A;Windows&#x3092;&#x6700;&#x8FD1;&#x89E6;&#x3089;&#x306A;&#x3044;&#x306E;&#x3067;&#x9060;&#x3056;&#x304B;&#x3063;&#x3066;&#x308B;&#x3051;&#x3069;&#x3084;&#x3063;&#x3071;&#x308A;&#x3053;&#x308C;&#x304C;&#x597D;&#x304D;&#x3063;&#x3066;&#x306A;&#x308B;&#x3002;</li>
+<li>Adobe Audition CC&#xFF1A;&#x305D;&#x3053;&#x305D;&#x3053;&#x7406;&#x89E3;&#x3057;&#x3066;&#x308B;&#x3051;&#x3069;&#x30CF;&#x30FC;&#x30C9;&#x306B;&#x4F7F;&#x3063;&#x305F;&#x3053;&#x3068;&#x306A;&#x3044;&#x3002;</li>
+<li>Adobe XD CC&#xFF1A;DailyUI&#x3067;&#x4F7F;&#x3063;&#x3066;&#x308B;&#x3002;&#x597D;&#x304D;&#x3002;</li>
+</ul>
+</li>
+<li>Tool
+<ul>
+<li>
+<p>GitHub/GitLab&#xFF1A;&#x5B8C;&#x5168;&#x306B;&#x7406;&#x89E3;&#x3057;&#x305F; ( &#x3044;&#x3044;&#x3048; )</p>
+</li>
+<li>
+<p>Trello&#xFF1A;&#x3053;&#x308C;&#x304C;&#x306A;&#x3044;&#x3068;&#x6B7B;&#x306C;&#x30EC;&#x30D9;&#x30EB;&#x3067;&#x4F7F;&#x3063;&#x3066;&#x308B;&#x3002;&#x591A;&#x5206;1000&#x4EBA;&#x96C6;&#x3081;&#x305F;&#x3089;&#x50D5;&#x3088;&#x308A;&#x4F7F;&#x3063;&#x3066;&#x308B;&#x4EBA;&#x304C;&#x5168;&#x4F53;&#x306E;1%&#x5207;&#x308B;&#x6C17;&#x304C;&#x3059;&#x308B;&#x30EC;&#x30D9;&#x30EB;&#x3002;</p>
+</li>
+<li>
+<p>Evernote&#xFF1A;I love Evernote. &#x3081;&#x3063;&#x3061;&#x3083;&#x4F7F;&#x3063;&#x3066;&#x308B;&#x3002;</p>
+</li>
+<li>
+<p>Vim&#xFF1A;&#x30A8;&#x30C7;&#x30A3;&#x30BF;&#x30FC;&#x8D77;&#x52D5;&#x304C;&#x3081;&#x3093;&#x3069;&#x304F;&#x3055;&#x3044;&#x3068;&#x304D;&#x306B;&#x30D0;&#x30CB;&#x30E9;&#x306E;Vim&#x3092;&#x4F7F;&#x3063;&#x3066;&#x308B;&#x3002;</p>
+<ul>
+<li>
+<blockquote>
+<p><code>&#x4E16;&#x306E;&#x4E2D;&#x306B;&#x30C6;&#x30AD;&#x30B9;&#x30C8;&#x30A8;&#x30C7;&#x30A3;&#x30BF;&#x306F;3&#x7A2E;&#x985E;&#x3057;&#x304B;&#x7121;&#x3044;&#x3002;Vim&#x304B;Emacs&#x304B;&#x305D;&#x308C;&#x4EE5;&#x5916;&#x3060;&#x3002;</code></p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li>
+<p>Visual Studio Code&#xFF1A;&#x6388;&#x696D;&#x30CE;&#x30FC;&#x30C8;&#x3060;&#x3063;&#x305F;&#x308A;&#x30B3;&#x30FC;&#x30C7;&#x30A3;&#x30F3;&#x30B0;&#x3068;&#x304B;&#x306F;&#x3053;&#x308C;&#x3067;&#x3057;&#x3066;&#x308B;&#x3002;</p>
+</li>
+<li>
+<p>Opera&#xFF1A;&#x30D6;&#x30E9;&#x30A6;&#x30B6;&#x306F;Opera&#x304C;&#x6700;&#x5F37;&#x306A;&#x3093;&#x3060;&#x3088;&#x306A;&#x3041;&#x3002;</p>
+</li>
+<li>
+<p>Vivaldi&#xFF1A;&#x30B5;&#x30D6;&#x306E;&#x30D6;&#x30E9;&#x30A6;&#x30B6;&#x3068;&#x3057;&#x3066;&#x4F7F;&#x3063;&#x3066;&#x307E;&#x3059;&#x3002;</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 class="mume-header" id="what-i-am-doing">What I am doing</h3>
+
+<h4 class="mume-header" id="%E6%B4%A5%E5%B1%B1%E9%AB%98%E5%B0%82%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E7%A0%94%E7%A9%B6%E9%83%A8%E3%81%AB%E6%89%80%E5%B1%9E%E3%81%97%E3%81%A6%E3%81%84%E3%81%BE%E3%81%99">&#x6D25;&#x5C71;&#x9AD8;&#x5C02;&#x30B7;&#x30B9;&#x30C6;&#x30E0;&#x7814;&#x7A76;&#x90E8;&#x306B;&#x6240;&#x5C5E;&#x3057;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;</h4>
+
+<h5 class="mume-header" id="procon28">#procon28</h5>
+
+<p>procon28&#x3067;&#x306F;&#x30B9;&#x30DD;&#x30FC;&#x30C4;&#x904B;&#x55B6;&#x3092;&#x30C8;&#x30FC;&#x30BF;&#x30EB;&#x306B;&#x30B5;&#x30DD;&#x30FC;&#x30C8;&#x3059;&#x308B;&#x3082;&#x306E;&#x3092;&#x7ACB;&#x6848;&#x3001;&#x5E02;&#x5834;&#x8ABF;&#x67FB;&#x3057;&#x3001;&#x5148;&#x8F29;&#x3068;&#x4EF2;&#x9593;5&#x540D;&#x3067;&#x88FD;&#x4F5C;&#x3057;&#x307E;&#x3057;&#x305F;&#x3002;&#x4E2D;&#x3067;&#x3082;&#x5BFE;&#x6226;&#x8868;&#x751F;&#x6210;&#x30A2;&#x30EB;&#x30B4;&#x30EA;&#x30BA;&#x30E0;&#x3068;&#x30C8;&#x30FC;&#x30CA;&#x30E1;&#x30F3;&#x30C8;&#x306B;&#x304A;&#x3051;&#x308B;&#x9806;&#x4F4D;&#x6C7A;&#x5B9A;&#x30A2;&#x30EB;&#x30B4;&#x30EA;&#x30BA;&#x30E0;&#x3092;&#x62C5;&#x5F53;&#x3057;&#x307E;&#x3057;&#x305F;&#x3002;<br>
+&#x53C2;&#x52A0;&#x8A18;&#x4E8B;&#xFF1A;<a href="https://sysken.org/blog/4323/">&#x7B2C;&#xFF12;&#xFF18;&#x56DE;&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30DF;&#x30F3;&#x30B0;&#x30B3;&#x30F3;&#x30C6;&#x30B9;&#x30C8;&#x3010;&#x8AB2;&#x984C;&#x90E8;&#x9580;&#x3011;</a> written by my friend glatan.</p>
+<h5 class="mume-header" id="procon29">#procon29</h5>
+
+<p>procon29&#x3067;&#x306F;&#x81EA;&#x6CBB;&#x4F53;&#x306E;&#x653E;&#x9001;&#x3059;&#x308B;&#x97F3;&#x58F0;&#x60C5;&#x5831;&#x3092;&#x807E;&#x8005;&#x3001;&#x76F2;&#x807E;&#x8005;&#x306B;&#x4F1D;&#x3048;&#x308B;&#x3082;&#x306E;&#x3092;&#x5B9F;&#x969B;&#x306B;&#x771F;&#x5EAD;&#x5E02;&#x3092;&#x8A2A;&#x554F;&#x3057;&#x5148;&#x8F29;&#x3068;&#x4EF2;&#x9593;+&#x52A9;&#x3063;&#x4EBA;&#x306E;6&#x540D;&#x3067;&#x88FD;&#x4F5C;&#x3057;&#x307E;&#x3057;&#x305F;&#x3002;&#x79C1;&#x306F;PM&#x3001;PL&#x3001;&#x30D7;&#x30EC;&#x30BC;&#x30F3;&#x3001;&#x30C7;&#x30B6;&#x30A4;&#x30F3;&#x3092;&#x62C5;&#x5F53;&#x3057;&#x307E;&#x3057;&#x305F;&#x3002;<br>
+&#x53C2;&#x52A0;&#x8A18;&#x4E8B;1&#xFF1A;<a href="https://medium.com/@terfno/procon29-%E3%81%AB%E5%8F%82%E6%88%A6%E3%81%97%E3%81%9F%E8%A9%B1-2a842508d471">#procon29 &#x306B;&#x53C2;&#x6226;&#x3057;&#x305F;&#x8A71;</a> wiritten by me.<br>
+&#x53C2;&#x52A0;&#x8A18;&#x4E8B;2&#xFF1A;<a href="https://blog.millenary.net/?p=69">&#x7B2C;29&#x56DE;&#x5168;&#x56FD;&#x9AD8;&#x5C02;&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30DF;&#x30F3;&#x30B0;&#x30B3;&#x30F3;&#x30C6;&#x30B9;&#x30C8;&#x306B;&#x53C2;&#x52A0;&#x3057;&#x307E;&#x3057;&#x305F;</a> written by my friend  &#x7E23; .</p>
+<h5 class="mume-header" id="%E6%9C%AA%E8%B8%8F%E3%82%B8%E3%83%A5%E3%83%8B%E3%82%A2">&#x672A;&#x8E0F;&#x30B8;&#x30E5;&#x30CB;&#x30A2;</h5>
+
+<p>2018&#x5E74;&#x306E;&#x672A;&#x8E0F;&#x30B8;&#x30E5;&#x30CB;&#x30A2;&#x3067;VR&#x306B;&#x304A;&#x3051;&#x308B;EC&#x306E;&#x5728;&#x308A;&#x65B9;&#x3068;&#x3044;&#x3046;&#x30D7;&#x30ED;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x3067;&#x63A1;&#x629E;&#x3055;&#x308C;&#x3066;&#x3044;&#x307E;&#x3057;&#x305F;&#x3002;&#x6700;&#x7D42;&#x7684;&#x306B;&#x30B9;&#x30FC;&#x30D1;&#x30FC;&#x30AF;&#x30EA;&#x30A8;&#x30FC;&#x30BF;&#x30FC;&#x306B;&#x306F;&#x9078;&#x3070;&#x308C;&#x307E;&#x305B;&#x3093;&#x3067;&#x3057;&#x305F;&#x304C;3&#x3064;&#x306E;&#x30D7;&#x30ED;&#x30C8;&#x30BF;&#x30A4;&#x30D7;&#x3092;&#x88FD;&#x4F5C;&#x3057;&#x3001;&#x305D;&#x308C;&#x3092;&#x767A;&#x8868;&#x3059;&#x308B;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x307E;&#x3057;&#x305F;&#x3002;<br>
+&#x53C2;&#x52A0;&#x8A18;&#x4E8B;&#xFF1A;<a href="https://medium.com/@terfno/%E6%9C%AA%E8%B8%8F%E3%82%B8%E3%83%A5%E3%83%8B%E3%82%A2%E3%82%92%E4%BF%AE%E4%BA%86%E3%81%97%E3%81%9F%E3%81%AE%E3%81%A7%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B-3c62c3119094">&#x672A;&#x8E0F;&#x30B8;&#x30E5;&#x30CB;&#x30A2;&#x3092;&#x4FEE;&#x4E86;&#x3057;&#x305F;&#x306E;&#x3067;&#x632F;&#x308A;&#x8FD4;&#x308B;</a> written by me.</p>
+<h5 class="mume-header" id="%E4%BB%96%E3%81%AB%E3%82%82%E5%8B%89%E5%BC%B7%E4%B8%AD">&#x4ED6;&#x306B;&#x3082;&#x52C9;&#x5F37;&#x4E2D;</h5>
+
+<p>&#x4ED6;&#x306B;&#x3082;&#x5B66;&#x6821;&#x306E;&#x5F25;&#x751F;&#x796D;&#x306B;&#x4F5C;&#x54C1;&#x3092;&#x51FA;&#x3057;&#x305F;&#x308A;&#x3001;&#x81EA;&#x4F5C;PC&#x3092;&#x3057;&#x305F;&#x308A;&#x3001;&#x52D5;&#x753B;&#x3092;&#x4F5C;&#x3063;&#x305F;&#x308A;&#x3001;&#x30E1;&#x30C7;&#x30A3;&#x30A2;&#x30A2;&#x30FC;&#x30C8;&#x306B;&#x6311;&#x6226;&#x3057;&#x305F;&#x308A;&#x3057;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;<br>
+Ruby&#x306F;&#x52C9;&#x5F37;&#x4E2D;&#x3067;&#x3059;&#x304C;&#x3001;&#x8A18;&#x8FF0;&#x306E;&#x96F0;&#x56F2;&#x6C17;&#x304C;&#x4E00;&#x756A;&#x597D;&#x304D;&#x306A;&#x306E;&#x3067;&#x3082;&#x3063;&#x3068;&#x5404;&#x7A2E;&#x30D5;&#x30EC;&#x30FC;&#x30E0;&#x30EF;&#x30FC;&#x30AF;&#x3092;&#x542B;&#x3081;&#x3066;&#x7406;&#x89E3;&#x3092;&#x6DF1;&#x3081;&#x305F;&#x3044;&#x3068;&#x601D;&#x3063;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;</p>
+<h4 class="mume-header" id="%E3%83%86%E3%83%8B%E3%82%B9">&#x30C6;&#x30CB;&#x30B9;</h4>
+
+<p>&#x4EE5;&#x524D;&#x306F;&#x30BD;&#x30D5;&#x30C8;&#x30C6;&#x30CB;&#x30B9;&#x90E8;&#x306B;&#x3082;&#x6240;&#x5C5E;&#x3057;&#x3066;&#x3044;&#x307E;&#x3057;&#x305F;&#x304C;&#x3001;&#x540C;&#x671F;&#x3067;&#x5165;&#x3063;&#x305F;&#x4EBA;&#x9593;&#x3068;&#x5408;&#x308F;&#x305A;&#x9000;&#x90E8;&#x3057;&#x307E;&#x3057;&#x305F;&#x3002;<br>
+&#x30BD;&#x30D5;&#x30C8;&#x30C6;&#x30CB;&#x30B9;&#x3068;&#x786C;&#x5F0F;&#x30C6;&#x30CB;&#x30B9;&#x4E21;&#x65B9;&#x3092;&#x793E;&#x4F1A;&#x4EBA;&#x30AF;&#x30E9;&#x30D6;&#x3067;&#x7D9A;&#x3051;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;</p>
+<h4 class="mume-header" id="%E5%B0%91%E6%9E%97%E5%AF%BA%E6%8B%B3%E6%B3%95">&#x5C11;&#x6797;&#x5BFA;&#x62F3;&#x6CD5;</h4>
+
+<p>&#x5C0F;&#x5B66;5&#x5E74;&#x751F;&#x304B;&#x3089;&#x59CB;&#x3081;&#x307E;&#x3057;&#x305F;&#x3002;&#x521D;&#x6BB5;&#x3092;&#x5141;&#x53EF;&#x3055;&#x308C;&#x307E;&#x3057;&#x305F;&#x304C;&#x3001;&#x9053;&#x5834;&#x306B;&#x884C;&#x3051;&#x308B;&#x6642;&#x9593;&#x304C;&#x5C11;&#x306A;&#x304F;&#x306A;&#x3063;&#x3066;&#x3057;&#x307E;&#x3063;&#x3066;&#x3044;&#x308B;&#x306E;&#x304C;&#x73FE;&#x72B6;&#x3067;&#x3059;&#x3002;<br>
+&#x884C;&#x3051;&#x308B;&#x6642;&#x9593;&#x3092;&#x898B;&#x3064;&#x3051;&#x3066;&#x306F;&#x9854;&#x3092;&#x51FA;&#x3057;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;</p>
+<h4 class="mume-header" id="dj">DJ</h4>
+
+<p>&#x9AD8;&#x5C02;&#x306B;&#x5165;&#x3063;&#x3066;DJ&#x304C;&#x3067;&#x304D;&#x308B;&#x540C;&#x7D1A;&#x751F;&#x306B;&#x3042;&#x3053;&#x304C;&#x308C;&#x3066;DJ&#x3092;&#x6559;&#x308F;&#x308A;&#x306F;&#x3058;&#x3081;&#x307E;&#x3057;&#x305F;&#x3002;&#x5F25;&#x751F;&#x796D;&#x3067;DJ&#x3092;&#x3057;&#x307E;&#x3057;&#x305F;&#x3002;<br>
+rekordbox&#x3092;&#x4F7F;&#x3063;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;house&#x3084;bounce&#x304C;&#x597D;&#x304D;&#x3067;&#x3059;&#x304C;&#x3001;&#x6C17;&#x304C;&#x72C2;&#x3063;&#x305F;&#x3088;&#x3046;&#x306A;dubstep&#x3082;&#x597D;&#x304D;&#x3067;&#x3059;&#x3002;<br>
+DJ&#x3092;&#x3059;&#x308B;&#x3068;&#x304D;&#x306F;&#x3060;&#x3044;&#x305F;&#x3044;&#x30B9;&#x30FC;&#x30C4;&#x3092;&#x7740;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;</p>
+<blockquote>
+<p>&#x6700;&#x8FD1;DDJ-RB&#x304C;&#x58CA;&#x308C;&#x3066;&#x3057;&#x307E;&#x3063;&#x305F;&#x306E;&#x3067;&#x8F9B;&#x3044;</p>
+</blockquote>
+<h4 class="mume-header" id="%E3%83%88%E3%83%A9%E3%83%B3%E3%83%97">&#x30C8;&#x30E9;&#x30F3;&#x30D7;</h4>
+
+<p>&#x30DE;&#x30B8;&#x30C3;&#x30AF;&#x3068;&#x30D5;&#x30E9;&#x30EA;&#x30C3;&#x30B7;&#x30E5; (cardistry) &#x304C;&#x8DA3;&#x5473;&#x3067;&#x3084;&#x3063;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;<br>
+&#x597D;&#x307F;&#x306E;&#x30C7;&#x30B6;&#x30A4;&#x30F3;&#x304C;&#x3042;&#x308B;&#x3068;&#x3064;&#x3044;&#x3064;&#x3044;&#x8CB7;&#x3063;&#x3066;&#x3057;&#x307E;&#x3044;&#x307E;&#x3059;&#x3002;</p>
+<h4 class="mume-header" id="%E3%81%9D%E3%81%AE%E4%BB%96%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%84">&#x305D;&#x306E;&#x4ED6;&#x30B9;&#x30DD;&#x30FC;&#x30C4;</h4>
+
+<p>&#x89AA;&#x306E;&#x5F71;&#x97FF;&#x3067;&#x767B;&#x5C71;&#x3092;&#x3059;&#x3053;&#x3057;&#x3057;&#x307E;&#x3059;&#x3002;<br>
+&#x7A1C;&#x7DDA;&#x3092;&#x6B69;&#x304F;&#x306E;&#x306F;&#x3044;&#x3044;&#x3067;&#x3059;&#x306D;&#x3002;<br>
+&#x30B5;&#x30D0;&#x30A4;&#x30D0;&#x30EB;&#x30B2;&#x30FC;&#x30E0;&#x3082;&#x3057;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;&#x975E;&#x516C;&#x5F0F;&#x306A;&#x540C;&#x597D;&#x4F1A;&#x304C;&#x5B58;&#x5728;&#x3059;&#x308B;&#x306E;&#x3067;&#x3059;&#x304C;&#x3001;&#x79C1;&#x304C;&#x52D5;&#x3051;&#x306A;&#x3044;&#x3053;&#x3068;&#x3082;&#x591A;&#x304F;&#x306A;&#x308A;&#x6B7B;&#x3093;&#x3067;&#x3044;&#x307E;&#x3059;&#x3002;&#x1F64F;&#x1F607;<br>
+H&amp;K&#x306E;&#x30C7;&#x30B6;&#x30A4;&#x30F3;&#x304C;&#x597D;&#x304D;&#x3067;&#x3059;&#x3002;</p>
+<h3 class="mume-header" id="other">other</h3>
+
+<ul>
+<li>&#x30A8;&#x30CA;&#x30B8;&#x30FC;&#x306F;&#x30E2;&#x30F3;&#x30B9;&#x30BF;&#x30FC;&#x6D3E;
+<ul>
+<li>&#x3042;&#x3068;&#x30B3;&#x30FC;&#x30D2;&#x30FC;&#x3088;&#x308A;&#x7D05;&#x8336;&#x6D3E;</li>
+<li>&#x8D85;&#x7518;&#x515A;</li>
+</ul>
+</li>
+<li>&#x670D;&#x306F;&#x3042;&#x307E;&#x308A;&#x6301;&#x3063;&#x3066;&#x306A;&#x3044;
+<ul>
+<li>&#x30B9;&#x30DD;&#x30FC;&#x30C4;&#x30A6;&#x30A7;&#x30A2;
+<ul>
+<li>&#x666E;&#x6BB5;&#x306F;&#x30B9;&#x30DD;&#x30FC;&#x30C4;&#x30A6;&#x30A7;&#x30A2;</li>
+<li>&#x904B;&#x52D5;&#x90E8;&#x3058;&#x3083;&#x306A;&#x3044;&#x3051;&#x3069;&#x6559;&#x5BA4;&#x3067;&#x3082;&#x304B;&#x306A;&#x308A;&#x904B;&#x52D5;&#x90E8;&#x3063;&#x307D;&#x304F;&#x898B;&#x3048;&#x308B;</li>
+</ul>
+</li>
+<li>&#x30B9;&#x30FC;&#x30C4;
+<ul>
+<li>&#x670D;&#x88C5;&#x306F;2&#x629E;&#x3002;&#x30B9;&#x30FC;&#x30C4;&#x304B;&#x305D;&#x308C;&#x4EE5;&#x5916;&#x3002;</li>
+<li>&#x30A4;&#x30D9;&#x30F3;&#x30C8;&#x306F;&#x3060;&#x3044;&#x305F;&#x3044;&#x30B9;&#x30FC;&#x30C4;&#x306A;&#x306E;&#x3067;Mixi&#x306E;&#x4EBA;&#x4E8B;&#x306E;&#x4EBA;&#x304C;<code>?????</code>&#x3063;&#x3066;&#x306A;&#x308B;&#x306E;&#x3082;&#x308F;&#x304B;&#x308B;&#x3002;</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="mume-header" id="contact-me">Contact me</h2>
+
+<h3 class="mume-header" id="address">Address</h3>
+
+<p>556-1, Nishishimo, Tsuyama City, Okayama Prefectur 708-1225, Japan</p>
+<h3 class="mume-header" id="mail-address">Mail address</h3>
+
+<p>gmail : <a href="mailto:sueda.takahito@gmail.com">sueda.takahito@gmail.com</a><br>
+outlook : <a href="mailto:suedatakahito@outlook.jp">suedatakahito@outlook.jp</a><br>
+office365 : <a href="mailto:b-suedat@tsuyama.kosen-ac.jp">b-suedat@tsuyama.kosen-ac.jp</a></p>
+<h3 class="mume-header" id="sns">SNS</h3>
+
+<p>Facebook : <a href="https://www.facebook.com/takahito.sueda">takahito.sueda</a><br>
+Twitter : <a href="https://twitter.com/terfno_mai">&#x3066;&#x308B;&#x3075;&#x306E;</a><br>
+Linkedin : <a href="https://www.linkedin.com/in/suedatakahito/">&#x672B;&#x7530; &#x8CB4;&#x4E00;</a><br>
+GitHub : <a href="https://github.com/Terfno">Terfno</a><br>
+YouTube : <a href="https://www.youtube.com/channel/UCxkKHEReWImVnREwRFXGYWg?view_as=subscriber">Terfno</a><br>
+Discord : Terfno(#8993)<br>
+blog(club) : <a href="https://sysken.org/blog/author/Terfno">sysken.org</a><br>
+medium : <a href="https://medium.com/@terfno">@terfno</a></p>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
