@@ -1,4 +1,14 @@
 # Takahito Sueda
+<link rel="icon" href="http://www.gravatar.com/avatar/2fda10ff8dccf267309cb551841e96c0">
+<title>Terfno Desk</title>
+
+:::danger
+2018年12月以前に私から名刺を受け取った方へ
+PGP fingerprintが記載されていますが失効しています。
+お手数おかけしますが、焼却破棄またはシュレッダーを通した後破棄してください。
+よろしくおねがいします。
+:::
+
 ## Contact me
 ### Address
 556-1, Nishishimo, Tsuyama City, Okayama Prefectur 708-1225, Japan
@@ -45,7 +55,8 @@ TwitterやSlackではTerfno（てるふの）と名乗っています。
 
   * Visual Studio Code：授業ノートだったりコーディングとかはこれでしてる。
   * Opera：ブラウザはOperaが最強なんだよなぁ。
-  * Vivaldi：サブのブラウザとして使ってます。
+  * Vivaldi：サブのブラウザとして使ってます。]
+  
 ### What I am doing
 #### 津山高専システム研究部に所属しています。
 ##### #procon28
