@@ -18,6 +18,7 @@ outlook : suedatakahito@outlook.jp
 office365 : b-suedat@tsuyama.kosen-ac.jp
 ### Post
 Facebook : [takahito.sueda](https://www.facebook.com/takahito.sueda)
+Instagram : [terfno](https://www.instagram.com/terfno/)
 Twitter : [てるふの](https://twitter.com/terfno_mai)
 Linkedin : [末田 貴一](https://www.linkedin.com/in/suedatakahito/)
 GitHub : [Terfno](https://github.com/Terfno)
