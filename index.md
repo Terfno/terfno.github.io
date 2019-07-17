@@ -62,23 +62,29 @@ TwitterやSlackではTerfno（てるふの）と名乗っています。
 #### 津山高専システム研究部に所属しています。
 ##### #procon28
 procon28ではスポーツ運営をトータルにサポートするものを立案、市場調査し、先輩と仲間5名で製作しました。中でも対戦表生成アルゴリズムとトーナメントにおける順位決定アルゴリズムを担当しました。[^1]
-[^1]:参加記事：[第２８回プログラミングコンテスト【課題部門】](https://sysken.org/blog/4323/) written by my friend glatan.
+[^1]:参加記事：[SYSKEN ONLINE/第２８回プログラミングコンテスト【課題部門】](https://sysken.org/blog/4323/) written by my friend glatan.
+
 ##### #procon29
 procon29では自治体の放送する音声情報を聾者、盲聾者に伝えるものを実際に真庭市を訪問し先輩と仲間+助っ人の6名で製作しました。私はPM、PL、プレゼン、デザインを担当しました。[^2][^3]
-[^2]:参加記事：[#procon29 に参戦した話](https://medium.com/@terfno/procon29-に参戦した話-2a842508d471) wiritten by me.
-[^3]:参加記事：[第29回全国高専プログラミングコンテストに参加しました](https://blog.millenary.net/?p=69) written by my friend  縣 .
+[^2]:参加記事：[Medium/#procon29 に参戦した話](https://medium.com/@terfno/procon29-に参戦した話-2a842508d471) wiritten by me.
+[^3]:参加記事：[縣雑記帳/第29回全国高専プログラミングコンテストに参加しました](https://blog.millenary.net/?p=69) written by my friend  縣 .
+
 ##### 未踏ジュニア
 2018年の未踏ジュニアでVRにおけるECの在り方というプロジェクトで採択されていました。最終的にスーパークリエーターには選ばれませんでしたが3つのプロトタイプを製作し、それを発表することができました。[^4]
-[^4]:参加記事：[未踏ジュニアを修了したので振り返る](https://medium.com/@terfno/未踏ジュニアを修了したので振り返る-3c62c3119094) written by me.
+[^4]:参加記事：[Medium/未踏ジュニアを修了したので振り返る](https://medium.com/@terfno/未踏ジュニアを修了したので振り返る-3c62c3119094) written by me.
+
 ##### 他にも勉強中
 他にも学校の弥生祭に作品を出したり、自作PCをしたり、動画を作ったり、メディアアートに挑戦したりしています。
-Rubyは勉強中ですが、記述の雰囲気が一番好きなのでもっと各種フレームワークを含めて理解を深めたいと思っています。
+今はGoがマイブームです。(PM業とデザイン仕事が多すぎて全然コード書けない…あ、春にIPAのPMとります。)
+
 #### テニス
 以前はソフトテニス部にも所属していましたが、同期で入った人間と合わず退部しました。
 ソフトテニスと硬式テニス両方を社会人クラブで続けています。
+
 #### 少林寺拳法
 小学5年生から始めました。初段を允可されましたが、道場に行ける時間が少なくなってしまっているのが現状です。
 行ける時間を見つけては顔を出しています。
+
 #### DJ
 高専に入ってDJができる同級生にあこがれてDJを教わりはじめました。弥生祭でDJをしました。
 rekordboxを使っています。houseやbounceが好きですが、気が狂ったようなdubstepも好きです。
@@ -88,6 +94,7 @@ DJをするときはだいたいスーツを着ています。
 #### トランプ
 マジックとフラリッシュ (cardistry) が趣味でやっています。
 好みのデザインがあるとついつい買ってしまいます。
+
 #### その他スポーツ
 親の影響で登山をすこしします。
 稜線を歩くのはいいですね。
@@ -108,10 +115,47 @@ H&Kのデザインが好きです。
 
 ## history
 ### 2019
+#### 6月
+ICTSCのデザイン班のリーダーになった。
+
+#### 5月
+ICTSCのデザイナーとして学生運営に参加。熱海にキックオフミーティングのために初上陸した。
+
+#### 4月
+津山開催のカンファレンスを中止にした。人生初の挫折だったけど、とくに精神的ダメージは無かった。
+
+大阪で開催の逆求人[^23]と、京都開催のサポーターズの面談[^24]に参加した。夏休みのインターンシップを探しに行って、みごとに夏休みが消えた。
+[^23]: 参加記事 : [Medium/4-20-逆求人に行ってきた](https://medium.com/@terfno/e545d97528b3)
+[^24]: 参加記事 : [Medium/4-21-サポーターズの1on1面談行ってきた](https://medium.com/@terfno/3e71eb7373d6)
+
+また、人生初のクラウドファンディングのリターンが家に届いた。めっちゃ愛用しているMOFT。[^25]
+[^25]: 記事 : [Medium/kickstarter-で初めてのクラウドファンディング-moftが届いた-](https://medium.com/@terfno/9fde7277af7c)
+
+#### 3月
+コンフェス(@宇部高専)に参加したかったけど、システム創生コンテストとVOYAGE GROUPの1dayインターンにかぶっていたので自分は行かずに同級生のvillachを影武者にして動画作品を展示した。[^18]
+[^18]: 展示したCardistryの作品 : [YouTube/Cardistry #comfes2019 "影分身の術 kagebunshin-no-jutsu"](https://www.youtube.com/watch?v=7B6YgeJQ-4A)
+
+VOYAGE GROUPの1dayインターンに参加した。Goでチャットボット作る内容で、Goが好きになった。[^19]
+[^19]: 参加記事 : [Medium/VOYAGE GROUPの1day(3/10)インターンに行ってきた](https://medium.com/@terfno/a25936e263bc)
+
+システム創生コンテストでは車どうしが通信していい感じに交通するみたいなアイディアをプレゼン、アルゴリズムの立案をした。[^20]遠距離同士のチームでの開発の難しさを痛感した。(PMだった)
+[^20]: 参加記事 : [Medium/高専機構主催のシステム創生コンテストに参加した(3/12)](https://medium.com/@terfno/a60903556a9c)
+
+また高専カンファレンスin西京2にも参加して登壇しました。"良いプレゼンのためのプレゼン"をプレゼンしました。[^21] 割と好評で嬉しかった。たくさんの津山高専の友人を巻き込んでの参加だった。
+[^21]: 参加記事 : [Medium/#kosenconf_127saikyo で登壇した卍](https://medium.com/@terfno/e1b2f1da7c13)
+
+高専カンファレンスの帰り道に観光した。[^22]
+[^22]: 参加記事 : [Medium/高専カンファの帰りに防府天満宮行ってきた](https://medium.com/@terfno/7952f673d6e8)
+
+この頃から記事のタイトルにイベントのハッシュタグを入れたりしてる。
+
+#### 2月
+18歳になる。選挙権が手に入って嬉しかった。
+ちょうど選挙があって、立候補者一覧からホームページのある人→ホームページが見やすい人→facebookでコンタクト→レスが合った人って感じで選んだ。
 
 #### 1月
 高専カンファレンス新春in大阪の実行委員する。[^17]
-[^17]:参加記事:執筆中
+[^17]:参加記事: [Medium/#kosenconf_123shinshun の実行委員した話](https://medium.com/@terfno/b4b124a1bb97)
 
 ### 2018
 無事3年生になる。
@@ -119,7 +163,7 @@ H&Kのデザインが好きです。
 #### 夏休み~10月
 procon29しながらHackU[^12]にでつつ未踏ジュニアの開発→修了をする。
 は？
-[^12]:記事：[#hacku 2018 OSAKA に参加しました。](https://sysken.org/blog/5280/)
+[^12]:記事：[SYSKEN ONLINE/#hacku 2018 OSAKA に参加しました。](https://sysken.org/blog/5280/)
 >procon29では自治体の放送する音声情報を聾者、盲聾者に伝えるものを実際に真庭市を訪問し先輩と仲間+助っ人の6名で製作しました。私はPM、PL、プレゼン、デザインを担当しました。[^2][^3]
 
 >2018年の未踏ジュニアでVRにおけるECの在り方というプロジェクトで採択されていました。最終的にスーパークリエーターには選ばれませんでしたが3つのプロトタイプを製作し、それを発表することができました。[^4]
@@ -129,21 +173,21 @@ HackUはしっかり力を出しきれなかったので悔いが残ってる。
 #### 9月
 mixiのイベント[^15][^16]に参加&アメリカに行った。
 海外旅行ははじめてじゃなかったけど、アメリカははじめて。[^14]
-[^14]:参加記事：[人の金でアメリカ行ってみた](https://sysken.org/blog/5331/)
-[^15]:参加記事：[MixiのTDD Challengeに行ってきたよ #TDD_3](https://medium.com/@terfno/mixiのtdd-challengeに行ってきたよ-tdd-3-de24d1187191)
-[^16]:参加記事：[MixiのGit Challengeに行ってきたよ #mixi_git](https://medium.com/@terfno/mixiのgit-challengeに行ってきたよ-mixi-git-ea9b5dd98778)
+[^14]:参加記事：[SYSKEN ONLINE/人の金でアメリカ行ってみた](https://sysken.org/blog/5331/)
+[^15]:参加記事：[Medium/MixiのTDD Challengeに行ってきたよ #TDD_3](https://medium.com/@terfno/mixiのtdd-challengeに行ってきたよ-tdd-3-de24d1187191)
+[^16]:参加記事：[Medium/MixiのGit Challengeに行ってきたよ #mixi_git](https://medium.com/@terfno/mixiのgit-challengeに行ってきたよ-mixi-git-ea9b5dd98778)
 
 #### 5月
 未踏ジュニアに応募→採択される。[^11]
-[^11]:記事：[未踏ジュニア ブースト会議 行ってきました！](https://sysken.org/blog/5211/)
+[^11]:記事：[SYSKEN ONLINE/未踏ジュニア ブースト会議 行ってきました！](https://sysken.org/blog/5211/)
 
 #### 4月
 部のプロモーションとかもろもろやって新入生をたくさん集める。[^10]
 ポスターとか動画とかのデータはCCライセンスで公開してます。
-リポジトリ：[2018-sysken-promotion](https://github.com/Terfno/2018-sysken-promotion)
-動画：[SYSKEN promotion 2018](https://www.youtube.com/watch?v=_-pCRMIjDjE)
+リポジトリ：[GitHub/2018-sysken-promotion](https://github.com/Terfno/2018-sysken-promotion)
+動画：[YouTube/SYSKEN promotion 2018](https://www.youtube.com/watch?v=_-pCRMIjDjE)
 
-[^10]:記事：[新一年生向けにシステム研究部のプロモーション動画を作ってみた](https://sysken.org/blog/5162/)
+[^10]:記事：[SYSKEN ONLINE/新一年生向けにシステム研究部のプロモーション動画を作ってみた](https://sysken.org/blog/5162/)
 
 
 #### 3月
@@ -154,9 +198,9 @@ mixiのイベント[^15][^16]に参加&アメリカに行った。
 高専カンファは友達が増えた。
 最高の3月だった。
 このへんから最高に調子にのる。
-[^7]:出した動画：[Cardistry ”Comfes2018” by Terfno](https://www.youtube.com/watch?v=fQ9oKw3oDWI&t=34s)
-[^8]:記事:[総務省主催 G空間情報×宇宙技術利活用ビジネスコンテスト](https://sysken.org/blog/5051/) written by my friend takishun.
-[^9]:記事：[今更ですが…高専カンファレンスin西京行ってきました．](https://sysken.org/blog/5179/)
+[^7]:出した動画：[YouTube/Cardistry ”Comfes2018” by Terfno](https://www.youtube.com/watch?v=fQ9oKw3oDWI&t=34s)
+[^8]:記事:[SYSKEN ONLINE/総務省主催 G空間情報×宇宙技術利活用ビジネスコンテスト](https://sysken.org/blog/5051/) written by my friend takishun.
+[^9]:記事：[SYSKEN ONLINE/今更ですが…高専カンファレンスin西京行ってきました．](https://sysken.org/blog/5179/)
 
 ### 2017
 総合理工学科 情報システム系 配属。
@@ -164,15 +208,15 @@ mixiのイベント[^15][^16]に参加&アメリカに行った。
 #### 12月
 アドベントカレンダーをはじめて知る。
 そしていっぱい書く。
-記事：[PocketとEvernoteを連携して情報収集を効率化しよう！](https://sysken.org/blog/4504/)
-記事：[自作PCの魅力 1/2](https://sysken.org/blog/4654/)
-記事：[自作PCの魅力 2/2](https://sysken.org/blog/4759/)
+記事：[SYSKEN ONLINE/PocketとEvernoteを連携して情報収集を効率化しよう！](https://sysken.org/blog/4504/)
+記事：[SYSKEN ONLINE/自作PCの魅力 1/2](https://sysken.org/blog/4654/)
+記事：[SYSKEN ONLINE/自作PCの魅力 2/2](https://sysken.org/blog/4759/)
 
 #### 10月
 弥生祭にゲームを展示しようとして盛大に失敗。
 ゲームプログラミングを諦めたイベント。当時の自分の考えとゲームプログラミングの考え方の乖離が大きすぎてダメだった。
 アレ以来ゲームプログラミングはしていない。[^6]
-[^6]:記事:[弥生祭2017に展示するゲームの紹介 〜タイトルはまだ無い〜](https://sysken.org/blog/4343/)
+[^6]:記事:[SYSKEN ONLINE/弥生祭2017に展示するゲームの紹介 〜タイトルはまだ無い〜](https://sysken.org/blog/4343/)
 
 #### 夏休み~10月 
 procon28に参戦。
@@ -189,7 +233,7 @@ procon28に参戦。
 ソースコードはDropBoxで共有されてたけど、あれはGitHubを知らない私への気遣いだったと今なら分かる。
 作ったものはチェスの進化系のゲーム。最初で最後のゲームプログラミングだった説は濃厚。(弥生祭でゲーム展示しようとして失敗しているのはある)
 担当はスタート画面とロゴデザイン。[^5]
-[^5]: 記事：[“Computer Festival in Yonago 2017” に展示する「Blitzkrieg　　～思考速度の戦い、開幕　ハイスピードチェスバトル～ 」の紹介](https://sysken.org/blog/3963/)
+[^5]: 記事：[SYSKEN ONLINE/“Computer Festival in Yonago 2017” に展示する「Blitzkrieg　　～思考速度の戦い、開幕　ハイスピードチェスバトル～ 」の紹介](https://sysken.org/blog/3963/)
 
 #### 1月
 システム研究部に入部する。
