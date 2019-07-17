@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Terfno/terfno.github.io/issues"
   },
-  "homepage": "https://github.com/Terfno/terfno.github.io#readme"
+  "homepage": "https://github.com/Terfno/terfno.github.io#readme",
+  "dependencies": {
+    "prettier": "^1.18.2"
+  }
 }
