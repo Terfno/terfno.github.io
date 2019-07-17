@@ -1,4 +1,9 @@
 # Takahito Sueda
+<style>
+    .c{
+        text-align:center;
+    }
+</style>
 <link rel="icon" href="http://www.gravatar.com/avatar/2fda10ff8dccf267309cb551841e96c0">
 <title>Terfno Desk</title>
 
