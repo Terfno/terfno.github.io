@@ -57,6 +57,7 @@ todo: fix this para
   - JavaScript：Node.js 関連で。多分自分のなかで 1 番か 2 番目に書ける。非同期あんまり分かってない。
   - Ruby：入門した。めっちゃ好き。なんか作ろうと思うたびに候補として挙げるが適切じゃないことがあるのでなんだかんだ書かない。自分のアイディアとスキルが噛み合ってない証拠みたいなもの。
   - HTML、CSS：haml とかメタ CSS とかも Rails とか Sinatra の関連で雰囲気わかるようになった。CSS アニメーション興味ある。
+  - Go: voyage groupのインターンシップで使った
 - Design
   - Adobe Illustrator CC：とりあえずこれは使える。Photoshop はあんまり使えない。
   - Adobe Premiere Pro CC：動画編集最近これでしてる。
