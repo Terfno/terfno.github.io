@@ -263,6 +263,9 @@ mixi のイベント[^15][^16]に参加&アメリカに行った。
 
 #### 12 月
 
+後に参加するビジコンにエントリーするきっかけになったIoTの講習会に参加した。IoTの技術周りの話を期待して広島まで行ったけど、ビジネスよりで残念だった。[^30]
+[^30]:[SYSKEN ONLINE/地理空間情報×宇宙技術を活用したIoT人材育成の講習会](https://sysken.org/blog/4943/) written by my friend takishun
+
 アドベントカレンダーをはじめて知る。
 そしていっぱい書く。
 記事：[SYSKEN ONLINE/Pocket と Evernote を連携して情報収集を効率化しよう！](https://sysken.org/blog/4504/)
