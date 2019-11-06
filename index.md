@@ -29,11 +29,11 @@ office365 : b-suedat@tsuyama.kosen-ac.jp
 
 ### Post
 
-Facebook : [takahito.sueda](https://www.facebook.com/takahito.sueda)
-Instagram : [terfno](https://www.instagram.com/terfno/)
 Twitter : [てるふの](https://twitter.com/terfno_mai)
-Linkedin : [末田 貴一](https://www.linkedin.com/in/suedatakahito/)
+Instagram : [terfno](https://www.instagram.com/terfno/)
 GitHub : [Terfno](https://github.com/Terfno)
+Facebook : [takahito.sueda](https://www.facebook.com/takahito.sueda)
+Linkedin : [末田 貴一](https://www.linkedin.com/in/suedatakahito/)
 YouTube : [Terfno](https://www.youtube.com/channel/UCxkKHEReWImVnREwRFXGYWg?view_as=subscriber)
 Discord : Terfno(#8993)
 blog(club) : [sysken.org](https://sysken.org/blog/author/Terfno)
@@ -47,94 +47,58 @@ medium : [@terfno](https://medium.com/@terfno)
 Twitter や Slack では Terfno（てるふの）と名乗っています。
 
 ### Skill
-todo: fix this para
+基本的にWebの人間です。鯖サイド(Node.js/Go)が得意です。DBは最低限触れます。フロントが苦手です。
+VRの開発のために少しUnityを勉強しました。それなりに使えます。
 
 - Coding
-  - C：授業で使う程度なら問題なく書けるけど好きじゃない。
-  - C++：DxLib を一瞬触ったことある。Siv3D に挑戦したいなぁと思いながらできてない。
-  - C#：Unity 用に勉強した。VR なら多少は書けるくらい。
-  - Python3：技術テストとか面倒くさいことはだいたいこれに頼る。
-  - JavaScript：Node.js 関連で。多分自分のなかで 1 番か 2 番目に書ける。非同期あんまり分かってない。
-  - Ruby：入門した。めっちゃ好き。なんか作ろうと思うたびに候補として挙げるが適切じゃないことがあるのでなんだかんだ書かない。自分のアイディアとスキルが噛み合ってない証拠みたいなもの。
-  - HTML、CSS：haml とかメタ CSS とかも Rails とか Sinatra の関連で雰囲気わかるようになった。CSS アニメーション興味ある。
-  - Go: voyage groupのインターンシップで使った
+  - C: 計算科学の授業で使ったりした。
+  - C++: DxLibを1度だけ触った。Siv3D興味ある。
+  - C#: オブジェクト指向の勉強に使った。
+  - Unity C#: 未踏ジュニア2018でVR開発をした。
+  - Python3: コーディングテストとか、学校の課題の自動化とか、TwitterBotとか。
+  - Ruby: Ateamのインターンシップで使用した。RailsとSinatra使った。rqrcodeちょっと触った。
+  - Node.js: いちばん使った。Expressをよく使う。LINEBotやかんたんなwebサービス作った。
+  - Go: Voyage Groupのインターンシップで使用した。フルスタックでWebAppとか作った(GinとGorm)。
+  - Other
+    - HTML,CSS,JS: 最低限触れる。hamlとかメタCSSも触ったことある
+    - React.js/Vue.js: ちょっとだけ触ったことある。めっちゃ苦手。
+    - MySQL/SQLite: 最低限触れる。MySQLのほうが好き。
+
+デザインがそこそこできます。タイポグラフィや印刷物が得意です。動画も作れます。最近アニメーション勉強し始めました。
+ICTSCのデザイナーとして運営に参加しています。
+
 - Design
-  - Adobe Illustrator CC：とりあえずこれは使える。Photoshop はあんまり使えない。
-  - Adobe Premiere Pro CC：動画編集最近これでしてる。
-  - Adobe Premiere Rush CC：旅行の vlog とかはこれでしてる。
-  - Adobe After Effects CC：あんまり使えないので練習中。理解したい。
-  - AviUtl：Windows を最近触らないので遠ざかってるけどやっぱりこれが好きってなる。
-  - Adobe Audition CC：そこそこ理解してるけどハードに使ったことない。
-  - Adobe XD CC：DailyUI で使ってる。好き。
+  - Adobe CC
+    - Illustrator: 一番好き。タイポグラフィとかはこれで作る。
+    - Photoshop: あんまり使わない。iPad Pro買ったので触るようになった。
+    - InDesign: 印刷物で、大量のパターンをcsvで作る機能大好き。
+    - XD: プロトタイピングに使う。DailyUIで使った。
+    - Premiere Pro: 動画編集はこれがメイン。
+    - Premiere Rush: iPad Proで使う。Prのほうが好き。
+    - After Effects: アニメーションはこれとProcreateでやってる。
+    - Audition: 動画編集で音声調整する程度。
+    - Sketch: iPadだけ。練習中。
+    - Fresco: iPadだけ。練習中。
+  - AviUtl: Windows を最近触らないので遠ざかってるけどやっぱりこれが好きってなる。
+  - SketchBook(Autodesk): iPadだけ。練習中。
+  - Concept: iPadだけ。練習中。
+  - Procreate: iPadだけ。練習中。
+
+他にもいろいろ使ってます。
+
 - Tool
-
-  - GitHub/GitLab：完全に理解した ( いいえ )
-  - Trello：これがないと死ぬレベルで使ってる。多分 1000 人集めたら僕より使ってる人が全体の 1%切る気がするレベル。
-  - Evernote：I love Evernote. めっちゃ使ってる。
-  - Vim：エディター起動がめんどくさいときにバニラの Vim を使ってる。
-
+  - GitHub/GitLab: めっちゃ使う。
+  - Docker: 最近使い始めた。便利。
+  - Vagrant/Virtualbox: 開発に使い始めた。まだ旨味はない。
+  - k8s: 勉強中。今のプロジェクトで使ってる。
+  - Trello: これがないと死ぬレベルで使ってる。多分 1000 人集めたら僕より使ってる人が全体の 1%切る気がするレベル。
+  - Evernote: I love Evernote. めっちゃ使ってる。
+  - Vim: エディター起動がめんどくさいときにバニラの Vim を使ってる。
     - > `世の中にテキストエディタは3種類しか無い。VimかEmacsかそれ以外だ。`
+  - Visual Studio Code: 普段使い。
+  - Opera: ブラウザはOperaが最強なんだよなぁ。
 
-  - Visual Studio Code：授業ノートだったりコーディングとかはこれでしてる。
-  - Opera：ブラウザは Opera が最強なんだよなぁ。
-  - Vivaldi：サブのブラウザとして使ってます。
-
-### What I am doing
-
-#### 津山高専システム研究部に所属しています。
-
-##### #procon28
-
-procon28 ではスポーツ運営をトータルにサポートするものを立案、市場調査し、先輩と仲間 5 名で製作しました。中でも対戦表生成アルゴリズムとトーナメントにおける順位決定アルゴリズムを担当しました。[^1]
-[^1]:参加記事：[SYSKEN ONLINE/第２８回プログラミングコンテスト【課題部門】](https://sysken.org/blog/4323/) written by my friend glatan.
-
-##### #procon29
-
-procon29 では自治体の放送する音声情報を聾者、盲聾者に伝えるものを実際に真庭市を訪問し先輩と仲間+助っ人の 6 名で製作しました。私は PM、PL、プレゼン、デザインを担当しました。[^2][^3]
-[^2]:参加記事：[Medium/#procon29 に参戦した話](https://medium.com/@terfno/procon29-に参戦した話-2a842508d471) wiritten by me.
-[^3]:参加記事：[縣雑記帳/第 29 回全国高専プログラミングコンテストに参加しました](https://blog.millenary.net/?p=69) written by my friend 縣 .
-
-##### 未踏ジュニア
-
-2018 年の未踏ジュニアで VR における EC の在り方というプロジェクトで採択されていました。最終的にスーパークリエーターには選ばれませんでしたが 3 つのプロトタイプを製作し、それを発表することができました。[^4]
-[^4]:参加記事：[Medium/未踏ジュニアを修了したので振り返る](https://medium.com/@terfno/未踏ジュニアを修了したので振り返る-3c62c3119094) written by me.
-
-##### 他にも勉強中
-
-他にも学校の弥生祭に作品を出したり、自作 PC をしたり、動画を作ったり、メディアアートに挑戦したりしています。
-今は Go がマイブームです。(PM 業とデザイン仕事が多すぎて全然コード書けない…あ、春に IPA の PM とります。)
-
-#### テニス
-
-以前はソフトテニス部にも所属していましたが、同期で入った人間と合わず退部しました。
-ソフトテニスと硬式テニス両方を社会人クラブで続けています。
-
-#### 少林寺拳法
-
-小学 5 年生から始めました。初段を允可されましたが、道場に行ける時間が少なくなってしまっているのが現状です。
-行ける時間を見つけては顔を出しています。
-
-#### DJ
-
-高専に入って DJ ができる同級生にあこがれて DJ を教わりはじめました。弥生祭で DJ をしました。
-rekordbox を使っています。house や bounce が好きですが、気が狂ったような dubstep も好きです。
-DJ をするときはだいたいスーツを着ています。
-
-> 最近 DDJ-RB が壊れてしまったので辛い
-
-#### トランプ
-
-マジックとフラリッシュ (cardistry) が趣味でやっています。
-好みのデザインがあるとついつい買ってしまいます。
-
-#### その他スポーツ
-
-親の影響で登山をすこしします。
-稜線を歩くのはいいですね。
-サバイバルゲームもしています。非公式な同好会が存在するのですが、私が動けないことも多くなり死んでいます。:pray::innocent:
-H&K のデザインが好きです。
-
-### other
+### Like
 
 - エナジーはモンスター派
   - あとコーヒーより紅茶派
@@ -145,15 +109,34 @@ H&K のデザインが好きです。
     - 運動部じゃないけど教室でもかなり運動部っぽく見える
   - スーツ
     - 服装は 2 択。スーツかそれ以外。
-    - イベントはだいたいスーツなので Mixi の人事の人が`?????`ってなるのもわかる。
+    - イベントはだいたいスーツなので人事の人が`?????`ってなるのもわかる。
+- スポーツ
+  - テニス: 軟式も硬式も社会人クラブでやってます。
+  - 武道: 少林寺拳法を初段です。他にもいろいろ勉強中です。
+  - 登山: 稜線を歩くの好き。
+  - サバイバルゲーム: H&Kのデザインが好き。
+- Cardistry
+  - トランプが好きです。めちゃ集めてます。そこそこできます。
+- DJ
+  - 高専に入って DJ ができる同級生にあこがれて DJ を教わりはじめました。弥生祭で DJ をしました。rekordbox を使っています。house や bounce が好きですが、気が狂ったような dubstep も好きです。DJ をするときはだいたいスーツを着ています。(最近 DDJ-RB が壊れてしまったので辛い)
 
 ## history
 
 ### 2019
+#### 10月
+procon30に引率部門で参加しました。正直自分が予選落ちしたのが納得できないというのが感想です。
+参加記: [10-13-10-14-procon30-に見学で参戦した-いろいろ気づいた](https://medium.com/@terfno/1876e6df4f7a)
+
+#### 9月
+Ateamの3daysインターンシップに参加。
+記事執筆中
 
 #### 8月
-VOYAGE GROUPのインターンシップに参加
-高専フォーラムのスペシャルセッションに登壇→テーマは`私がNASAに行くためにしたこと`
+VOYAGE GROUPのインターンシップに参加しました。
+参加記: [8/12–8/30 VOYAGE GROUPのTreasureに参加した。](https://medium.com/@terfno/376263eb19b9)
+
+高専フォーラムのスペシャルセッションに登壇→テーマは`私がNASAに行くためにしたこと`でした。
+参加記: [8-22-全国高専フォーラムに登壇しただけ](https://medium.com/@terfno/1fe5789611eb)
 
 #### 7月
 総務省主催の`2019年度高専ワイヤレスIoT技術実証コンテスト`に採択された。なんだかんだあって240万円の支援をいただくことができた。嬉しい。
@@ -211,16 +194,18 @@ VOYAGE GROUP の 1day インターンに参加した。Go でチャットボッ�
 無事 3 年生になる。
 
 #### 夏休み~10 月
+procon29に参戦。
+procon29 では自治体の放送する音声情報を聾者、盲聾者に伝えるものを実際に真庭市を訪問し先輩と仲間+助っ人の 6 名で製作しました。私は PM、PL、プレゼン、デザインを担当しました。[^2][^3]
+[^2]:参加記事：[Medium/#procon29 に参戦した話](https://medium.com/@terfno/procon29-に参戦した話-2a842508d471) wiritten by me.
+[^3]:参加記事：[縣雑記帳/第 29 回全国高専プログラミングコンテストに参加しました](https://blog.millenary.net/?p=69) written by my friend 縣 .
 
-procon29 しながら HackU[^12]にでつつ未踏ジュニアの開発 → 修了をする。
-は？
+HackU[^12]に出場。
+HackU はしっかり力を出しきれなかったので悔いが残ってる。
 [^12]:記事：[SYSKEN ONLINE/#hacku 2018 OSAKA に参加しました。](https://sysken.org/blog/5280/)
 
-> procon29 では自治体の放送する音声情報を聾者、盲聾者に伝えるものを実際に真庭市を訪問し先輩と仲間+助っ人の 6 名で製作しました。私は PM、PL、プレゼン、デザインを担当しました。[^2][^3]
-
-> 2018 年の未踏ジュニアで VR における EC の在り方というプロジェクトで採択されていました。最終的にスーパークリエーターには選ばれませんでしたが 3 つのプロトタイプを製作し、それを発表することができました。[^4]
-
-HackU はしっかり力を出しきれなかったので悔いが残ってる。
+未踏ジュニアを修了をする。
+2018 年の未踏ジュニアで VR における EC の在り方というプロジェクトで採択されていました。最終的にスーパークリエーターには選ばれませんでしたが 3 つのプロトタイプを製作し、それを発表することができました。[^4]
+[^4]:参加記事：[Medium/未踏ジュニアを修了したので振り返る](https://medium.com/@terfno/未踏ジュニアを修了したので振り返る-3c62c3119094) written by me.
 
 #### 9 月
 
@@ -282,8 +267,8 @@ mixi のイベント[^15][^16]に参加&アメリカに行った。
 #### 夏休み~10 月
 
 procon28 に参戦。
-
-> procon28 ではスポーツ運営をトータルにサポートするものを立案、市場調査し、先輩と仲間 5 名で製作しました。中でも対戦表生成アルゴリズムとトーナメントにおける順位決定アルゴリズムを担当しました。[^1]
+procon28 ではスポーツ運営をトータルにサポートするものを立案、市場調査し、先輩と仲間 5 名で製作しました。中でも対戦表生成アルゴリズムとトーナメントにおける順位決定アルゴリズムを担当しました。[^1]
+[^1]:参加記事：[SYSKEN ONLINE/第２８回プログラミングコンテスト【課題部門】](https://sysken.org/blog/4323/) written by my friend glatan.
 
 #### 5 月
 
