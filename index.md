@@ -5,7 +5,7 @@
         text-align:center;
     }
 </style>
-<link rel="icon" href="http://www.gravatar.com/avatar/2fda10ff8dccf267309cb551841e96c0">
+<link rel="icon" href="./gravatar.jpeg">
 <title>Terfno Desk</title>
 
 :::danger
