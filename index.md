@@ -121,6 +121,14 @@ ICTSCのデザイナーとして運営に参加しています。
   - 高専に入って DJ ができる同級生にあこがれて DJ を教わりはじめました。弥生祭で DJ をしました。rekordbox を使っています。house や bounce が好きですが、気が狂ったような dubstep も好きです。DJ をするときはだいたいスーツを着ています。(最近 DDJ-RB が壊れてしまったので辛い)
 
 ## history
+### internship
+| schedule | company | other |
+| -------- | -------- | -------- |
+| 2019/09/06-2019/09/08 | Ateam  | 3days インターンシップ |
+| 2019/08/12-2019/08/30 | VOYAGE GROUP | Treasureインターンシップ |
+| 2019/03/10 | VOYAGE GROUP | 1day インターンシップ |
+| 2018/09/08 | Mixi | Git Challenge |
+| 2018/09/07 | Mixi | TDD Challenge |
 
 ### 2019
 #### 11月
