@@ -357,3 +357,7 @@ facebook のマーク・ザッカーバーグが homeAI 作ったっていう記
 
 誕生。
 おじいちゃん大好きっ子で育つ。
+
+<div class="c" style="color:gray;">
+  copyright 2019 TakahitoSueda(terfno)
+</div>
