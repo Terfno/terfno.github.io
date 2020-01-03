@@ -1,4 +1,5 @@
 # Takahito Sueda
+![GitHub last commit](https://img.shields.io/github/last-commit/terfno/rexetexer)
 
 <style>
     .c{
