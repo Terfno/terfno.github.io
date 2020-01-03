@@ -1,4 +1,3 @@
 # terfno.github.io
+![GitHub last commit](https://img.shields.io/github/last-commit/terfno/terfno.github.io)
 がんばるぞい
-## メモ
-なんとなく聞いたことあるBootstrapの4を導入してみた

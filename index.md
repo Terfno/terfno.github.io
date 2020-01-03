@@ -1,5 +1,5 @@
 # Takahito Sueda
-![GitHub last commit](https://img.shields.io/github/last-commit/terfno/rexetexer)
+![GitHub last commit](https://img.shields.io/github/last-commit/terfno/terfno.github.io)
 
 <style>
     .c{
@@ -403,5 +403,5 @@ facebook のマーク・ザッカーバーグが homeAI 作ったっていう記
 おじいちゃん大好きっ子で育つ。
 
 <div class="c" style="color:gray;">
-  copyright 2019 TakahitoSueda(terfno)
+  c 2018-2020 terfno
 </div>
