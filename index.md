@@ -17,28 +17,16 @@ PGP fingerprint が記載されていますが失効しています。
 :::
 
 ## Contact me
-
-### Address
-
-556-1, Nishishimo, Tsuyama City, Okayama Prefectur 708-1225, Japan
-
-### Mail address
-
-gmail : sueda.takahito@gmail.com
-outlook : suedatakahito@outlook.jp
-office365 : b-suedat@tsuyama.kosen-ac.jp
-
-### Post
-
-Twitter : [てるふの](https://twitter.com/terfno_mai)
-Instagram : [terfno](https://www.instagram.com/terfno/)
-GitHub : [Terfno](https://github.com/Terfno)
-Facebook : [takahito.sueda](https://www.facebook.com/takahito.sueda)
-Linkedin : [末田 貴一](https://www.linkedin.com/in/suedatakahito/)
-YouTube : [Terfno](https://www.youtube.com/channel/UCxkKHEReWImVnREwRFXGYWg?view_as=subscriber)
-Discord : Terfno(#8993)
-blog(club) : [sysken.org](https://sysken.org/blog/author/Terfno)
-medium : [@terfno](https://medium.com/@terfno)
+* address: 556-1, Nishishimo, Tsuyama City, Okayama Prefecture 708-1225, Japan
+* mail: sueda.takahito@gmail.com
+* GitHub: [Terfno](https://github.com/Terfno)
+* Twitter: [てるふの](https://twitter.com/terfno_mai)
+* Instagram: [terfno](https://www.instagram.com/terfno/* )
+* Facebook: [takahito.sueda](https://www.facebook.com/takahito.sueda)
+* YouTube: [Terfno](https://www.youtube.com/channel/UCxkKHEReWImVnREwRFXGYWg?view_as=subscriber)
+* Discord: Terfno(#8993)
+* blog(club): [sysken.org](https://sysken.org/blog/author/Terfno)
+* medium: [@terfno](https://medium.com/@terfno)
 
 ## about me
 
