@@ -150,12 +150,7 @@ ICTSCのデザイナーとして運営に参加しています。
 | 2017年3月      | コンピューターフェスティバル ソフトウェア部門 3位          |
 
 ### 2020
-#### 2~3月
-* ICTSCのホットステージと本戦
-  * オンライン開催のため、デザインの仕事が割と消えた
-  * 問題も作った→XSRF脆弱性関連の問題
-  * 問題解説: 
-  * 記事:
+#### 3月
 * コンピューターフェスティバル(comfes2020)が、オンライン開催になった
   * アプリケーション部門3つ、動画1つをエントリー
   * アプリケーション1つ目はあまり関与できなかった
@@ -165,7 +160,18 @@ ICTSCのデザイナーとして運営に参加しています。
   * 動画は例によってCardistryの動画をkim先輩と後輩のかなめくんと作った
     * YouTube: 
 * jig.jp のインターンシップに参加した。
-  * 記事: https://medium.com/@terfno/2020-spring-jig-jp-internship-report-3424524253c6
+  * 記事: [2020 Spring, jig.jp Internship Report.](https://medium.com/@terfno/3424524253c6)
+* Alpineベースのsbtが使えるDockerイメージと、Dockerfileを作って公開した。
+  * 記事: [alpineベースのsbtが使えるdockerイメージを作る](https://medium.com/@terfno/4d94cffe0fd8)
+  * GitHub: [sbt-alpine](https://github.com/Terfno/sbt-alpine)
+  * Docker Hub: [terfno/sbt](https://hub.docker.com/r/terfno/sbt)
+
+#### 2~3月
+* ICTSCのホットステージと本戦
+  * オンライン開催のため、デザインの仕事が割と消えた
+  * 問題も作った→XSRF脆弱性関連の問題
+  * 問題解説: [適当に俳句投稿サービス作ったらXSRF脆弱性孕んでた件。](https://blog.icttoracon.net/2020/03/01/%e9%81%a9%e5%bd%93%e3%81%ab%e4%bf%b3%e5%8f%a5%e6%8a%95%e7%a8%bf%e3%82%b5%e3%83%bc%e3%83%93%e3%82%b9%e4%bd%9c%e3%81%a3%e3%81%9f%e3%82%89xsrf%e8%84%86%e5%bc%b1%e6%80%a7%e5%ad%95%e3%82%93%e3%81%a7/)
+  * 記事: 執筆中(うーん公開しないかも)
 
 #### 1月
 * 2020年にやりたいことを言語化した。
@@ -175,7 +181,8 @@ ICTSCのデザイナーとして運営に参加しています。
 
 ### 2019
 #### 12月
-* TeXの環境構築がダルすぎて、Dockerでラップしたものを誰でも使えるようなものを書いた。
+* TeXの環境構築がダルすぎて、Dockerでラップしたものを誰でも使えるようなものを作って公開した。
+  * ReXeTeXeR: [GitHub](https://github.com/Terfno/ReXeTeXeR)
   * 記事: [TeXの環境構築ダルくね…? せや!](https://medium.com/@terfno/b9892d0d343c)
 * Treasure2019のメンバーでアドベントカレンダーをした。私はなぜか25日。
   * 記事: [就活中の就活生が贈る"就活する前に考えておくこと"](https://medium.com/@terfno/377a1f8d0080)
