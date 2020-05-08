@@ -17,8 +17,7 @@ PGP fingerprintが記載されていますが失効しています。
 :::
 
 ## Contact me
-* address: 556-1, Nishishimo, Tsuyama City, Okayama Prefecture 708-1225, Japan
-* mail: sueda.takahito@gmail.com
+* Mail: sueda.takahito@gmail.com
 * GitHub: [Terfno](https://github.com/Terfno)
 * Twitter: [てるふの](https://twitter.com/terfno_mai)
 * Instagram: [terfno](https://www.instagram.com/terfno/* )
@@ -26,30 +25,32 @@ PGP fingerprintが記載されていますが失効しています。
 * YouTube: [Terfno](https://www.youtube.com/channel/UCxkKHEReWImVnREwRFXGYWg?view_as=subscriber)
 * Discord: Terfno(#8993)
 * blog(club): [sysken.org](https://sysken.org/blog/author/Terfno)
-* medium: [@terfno](https://medium.com/@terfno)
+* Medium: [@terfno](https://medium.com/@terfno)
 
 ## about me
-末田貴一 (Sueda Takahito) です。
-いんたーねっとでは、Terfno（てるふの）と名乗っています。
+末田貴一 (Sueda Takahito) と申します。
+インターネット上では、Terfno（てるふの）と名乗っています。
 
 ## Skill
 GoとDockerが好きです。Webのバックエンドが得意です。デザインとマネジメントもできます。Webのフロントがあまりできません。
 
 ### Engineering
-基本的にWebの人間です。鯖サイド(Node.js/Go)が得意です。DBは最低限触れます。フロントが苦手です。
+基本的にWebの人間です。サーバーサイド(Node.js/Go)が得意です。DBは最低限触れます。フロントが苦手です。
 VRの開発のために少しUnityを勉強しました。それなりに使えます。
 最近インフラを勉強し始めました。
 セキュリティは最低限のレベルを目指して勉強中です。
+卒業研究で情報推薦に関する研究をすることになったので、いろいろ勉強しはじめました。全然関係ないですがMLって楽しいですね。
 
 #### Coding
 - C: 計算科学の授業で使ったりした。
 - C++: DxLibを1度だけ触った。Siv3D興味ある。
 - C#: オブジェクト指向の勉強に使った。
 - Unity C#: 未踏ジュニア2018でVR開発をした。
-- Python3: コーディングテストとか、学校の課題の自動化とか、TwitterBotとか。
+- Python3: 機械学習、コーディングテストとか、学校の課題の自動化、TwitterBotとか。
 - Ruby: Ateamのインターンシップで使用した。RailsとSinatra使った。rqrcodeちょっと触った。
 - Node.js: いちばん使った。Expressをよく使う。LINEBotやかんたんなwebサービス作った。
 - Go: Voyage Groupのインターンシップで使用した。フルスタックでWebAppとか作った(GinとGorm)。
+- Scala: 最近勉強しはじめました。
 - Other
   - HTML,CSS,JS: 最低限触れる。hamlとかメタCSSも触ったことある
   - Riot.js/React.js/Vue.js: ちょっとだけ触ったことある。めっちゃ苦手。
@@ -103,7 +104,7 @@ Psychological Safetyについて最近勉強してチーム内で活用してい
 ### その他宗教関連
 - Evernote: I love Evernote. めっちゃ使ってる。
 - Vim: バニラのVimを使ってる。
-  - > `世の中にテキストエディタは3種類しか無い。VimかEmacsかそれ以外だ。`
+  - `世の中にテキストエディタは3種類しか無い。VimかEmacsかそれ以外だ。`
 - Visual Studio Code: 普段使い。
 - Opera: ブラウザはOpera。サブにChromeが入っています。
 - エナジーはモンスター派
@@ -140,7 +141,7 @@ Psychological Safetyについて最近勉強してチーム内で活用してい
 ### Awards
 | schedule       | company                                                    |
 | -------------- | ---------------------------------------------------------- |
-| 2019年7月      | 総務省主催 高専ワイヤレスIoT技術実証コンテスト 5G部門 採択 |
+| 2019年7月      | 総務省主催 高専ワイヤレスIoT技術実証コンテスト 5G部門 採択→コンピューティング大賞 受賞 |
 | 2019年3月      | 高専機構主催 システム創生コンテスト 通信部門 敢闘賞        |
 | 2018年10月     | 第29回全国高専プログラミングコンテスト 課題部門 特別賞     |
 | 2018年5月~10月 | 未踏ジュニア採択 → 修了                                    |
@@ -149,6 +150,16 @@ Psychological Safetyについて最近勉強してチーム内で活用してい
 | 2017年3月      | コンピューターフェスティバル ソフトウェア部門 3位          |
 
 ### 2020
+#### 5月
+* 総務省主催 高専ワイヤレスIoT技術実証コンテスト コンピューティング大賞を受賞
+  * officialな記事: [2019年度 高専ワイヤレスIoT技術実証コンテストに参加しました。](https://sysken.org/blog/6061/)
+  * 個人のブログ: [2019/05/28~2020/05/01 2019年度 高専ワイヤレスiot技術実証コンテスト 5G部門 に参戦した](https://medium.com/@terfno/ecb8d9847c47)
+
+#### 4月
+* SARS-CoV-2の影響で学校が1日だけあったあとすぐ休校になった。
+* 就活もやった
+  * 全部Onlineだったけど、SARS-CoV-2がなくてもOnlineだったと思う。
+
 #### 3月
 * コンピューターフェスティバル(comfes2020)が、オンライン開催になった
   * アプリケーション部門3つ、動画1つをエントリー
@@ -157,7 +168,7 @@ Psychological Safetyについて最近勉強してチーム内で活用してい
   * アプリケーション2つ目はいつぞやに作ったReXeTeXeR
   * アプリケーション3つ目は完成しなかった(:poop:)
   * 動画は例によってCardistryの動画をkim先輩と後輩のかなめくんと作った
-    * YouTube: 
+    * YouTube: [comfes2020 c(oo)lass](https://www.youtube.com/watch?v=g27cgZ4D7xM)
 * jig.jp のインターンシップに参加した。
   * 記事: [2020 Spring, jig.jp Internship Report.](https://medium.com/@terfno/3424524253c6)
 * Alpineベースのsbtが使えるDockerイメージと、Dockerfileを作って公開した。
