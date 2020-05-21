@@ -12,5 +12,5 @@
 Notionにポートフォリオとブログを移設しました。
 よろしくおねがいします。
 * ポートフォリオ: [terfno | ~/portfolio](https://www.notion.so/portfolio-d961fcb78d6443d8ad6a837b26107fb9)
-* ブログ: [terfno | ~/blog](https://www.notion.so/blog-b6d5a548e2194482bfc3ee49259fcb2c)
+* ブログ: [terfno | ~/blog](https://www.notion.so/blog-2c7b349f58d84aada4f2dee5d04df44e)
 <div class="c">(c) 2018 terfno</div>
