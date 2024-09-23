@@ -1,4 +1,7 @@
 ---
+import Layout from '../components/Layout.astro'
+
+const title = "Takahito Sueda"
 ---
 
 <script>
@@ -6,22 +9,13 @@
   console.log("https://scrapbox.io/terfno/contact")
 </script>
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>terfno</title>
-	</head>
-	<body>
-		<h1>Takahito Sueda</h1>
-		<p>Scrapbox を活用し始めました。</p>
-		<p>ポートフォリオとして機能する予定です。</p>
-		<p>
-			<a href="https://scrapbox.io/terfno">
-				terfno の Scrapbox
-			</a>
-		</p>
-	</body>
-</html>
+<Layout title={title}>
+  <h1>{title}</h1>
+  <p>Scrapbox を活用し始めました。</p>
+  <p>ポートフォリオとして機能する予定です。</p>
+  <p>
+    <a href="https://scrapbox.io/terfno">
+      terfno の Scrapbox
+    </a>
+  </p>
+</Layout>
