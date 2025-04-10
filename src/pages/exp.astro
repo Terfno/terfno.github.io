@@ -1,52 +1,48 @@
 ---
 ---
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Web share test</title>
-    <style>
+<script>
+  import * as THREE from 'three';
 
-    </style>
-  </head>
-  <body>
-    <h1>Sharing MDN</h1>
+  const scene = new THREE.Scene();
+  const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
 
-    <p>We love MDN, and want to share it as far as we can! Click the following button to share MDN's home page using your system's native share functionality. See the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Navigator/share#Browser_compatibility">browsers this currently works on</a>.</p>
+  const renderer = new THREE.WebGLRenderer();
+  renderer.setSize( window.innerWidth, window.innerHeight * 0.9 );
+  renderer.setAnimationLoop( animate );
+  document.body.appendChild( renderer.domElement );
 
-    <p><button>Share MDN!</button></p>
+  // Create wireframe geometry for the cube
+  const geometry = new THREE.BoxGeometry( 1, 1, 1 );
+  const wireframe = new THREE.WireframeGeometry( geometry );
+  const lineMaterial = new THREE.LineBasicMaterial( { color: 0xffffff } );
+  const wireframeCube = new THREE.LineSegments( wireframe, lineMaterial );
+  scene.add( wireframeCube );
 
-    <p class="result"></p>
+  camera.position.z = 5;
 
-    <script>
-      let shareData = {
-        text: 'https://developer.mozilla.org'
-      };
+  let mouseX = 0;
+  let mouseY = 0;
 
-      const btn = document.querySelector('button');
-      const resultPara = document.querySelector('.result');
-      if(btn){
-        btn.addEventListener('click', () => {
-          if (resultPara) {
-            if (!navigator.canShare) {
-              resultPara.textContent = 'Web Share API not available';
-              return;
-            }
-            if (!navigator.canShare(shareData)) {
-              resultPara.textContent = 'Share data unsupported, disallowed, or invalid';
-              return;
-            }
-            navigator.share(shareData)
-              .then(() =>
-                resultPara.textContent = 'MDN shared successfully'
-              )
-              .catch((e) =>
-                resultPara.textContent = 'Error: ' + e
-              )
-          }
-        });
-      }
-    </script>
-  </body>
-</html>
+  // Event listener to track mouse movement
+  window.addEventListener('mousemove', (event) => {
+    mouseX = (event.clientX / window.innerWidth) * 2 - 1; // Normalize to range [-1, 1]
+    mouseY = (event.clientY / window.innerHeight) * 2 + 1; // Normalize to range [-1, 1]
+  });
+
+  function animate() {
+    // Rotate the cube to face the mouse direction
+    wireframeCube.rotation.x = mouseY * Math.PI; // Convert normalized value to radians
+    wireframeCube.rotation.y = mouseX * Math.PI;
+
+    renderer.render( scene, camera );
+  }
+</script>
+
+<style>
+  h1 {
+    height: 10%;
+  }
+</style>
+
+<title>running three.js sample</title>
+<h1>Trial of <a href="https://threejs.org/manual/#en/installation">Three.js</a></h1>
