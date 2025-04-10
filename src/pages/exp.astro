@@ -24,10 +24,14 @@
   let mouseY = 0;
 
   // Event listener to track mouse movement
-  window.addEventListener('mousemove', (event) => {
+  window.addEventListener('pointermove', event=>{
     mouseX = (event.clientX / window.innerWidth) * 2 - 1; // Normalize to range [-1, 1]
     mouseY = (event.clientY / window.innerHeight) * 2 + 1; // Normalize to range [-1, 1]
   });
+  window.addEventListener('touchmove', event=>{
+    mouseX = (event.touches[0].clientX / window.innerWidth) * 2 - 1; // Normalize to range [-1, 1]
+    mouseY = (event.touches[0].clientY / window.innerHeight) * 2 + 1; // Normalize to range [-1, 1]
+  })
 
   function animate() {
     // Rotate the cube to face the mouse direction
@@ -39,6 +43,11 @@
 </script>
 
 <style>
+  body {
+    margin: 0;
+    overflow: hidden;
+  }
+
   h1 {
     height: 10%;
   }
