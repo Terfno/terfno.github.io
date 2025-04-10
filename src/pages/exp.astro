@@ -7,20 +7,32 @@
   const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
 
   const renderer = new THREE.WebGLRenderer();
-  renderer.setSize( window.innerWidth, window.innerHeight*0.9 );
+  renderer.setSize( window.innerWidth, window.innerHeight * 0.9 );
   renderer.setAnimationLoop( animate );
   document.body.appendChild( renderer.domElement );
 
+  // Create wireframe geometry for the cube
   const geometry = new THREE.BoxGeometry( 1, 1, 1 );
-  const material = new THREE.MeshBasicMaterial( { color: 0xffffff } );
-  const cube = new THREE.Mesh( geometry, material );
-  scene.add( cube );
+  const wireframe = new THREE.WireframeGeometry( geometry );
+  const lineMaterial = new THREE.LineBasicMaterial( { color: 0xffffff } );
+  const wireframeCube = new THREE.LineSegments( wireframe, lineMaterial );
+  scene.add( wireframeCube );
 
   camera.position.z = 5;
 
+  let mouseX = 0;
+  let mouseY = 0;
+
+  // Event listener to track mouse movement
+  window.addEventListener('mousemove', (event) => {
+    mouseX = (event.clientX / window.innerWidth) * 2 - 1; // Normalize to range [-1, 1]
+    mouseY = (event.clientY / window.innerHeight) * 2 + 1; // Normalize to range [-1, 1]
+  });
+
   function animate() {
-    cube.rotation.x += 0.01;
-    cube.rotation.y += 0.01;
+    // Rotate the cube to face the mouse direction
+    wireframeCube.rotation.x = mouseY * Math.PI; // Convert normalized value to radians
+    wireframeCube.rotation.y = mouseX * Math.PI;
 
     renderer.render( scene, camera );
   }
