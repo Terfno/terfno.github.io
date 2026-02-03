@@ -1,22 +1,29 @@
 ---
+
 ---
+
 <script>
-  import * as THREE from 'three';
+  import * as THREE from "three";
 
   const scene = new THREE.Scene();
-  const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
+  const camera = new THREE.PerspectiveCamera(
+    75,
+    window.innerWidth / window.innerHeight,
+    0.1,
+    1000,
+  );
 
   const renderer = new THREE.WebGLRenderer();
-  renderer.setSize( window.innerWidth, window.innerHeight * 0.9 );
-  renderer.setAnimationLoop( animate );
-  document.body.appendChild( renderer.domElement );
+  renderer.setSize(window.innerWidth, window.innerHeight * 0.9);
+  renderer.setAnimationLoop(animate);
+  document.body.appendChild(renderer.domElement);
 
   // Create wireframe geometry for the cube
-  const geometry = new THREE.BoxGeometry( 1, 1, 1 );
-  const wireframe = new THREE.WireframeGeometry( geometry );
-  const lineMaterial = new THREE.LineBasicMaterial( { color: 0xffffff } );
-  const wireframeCube = new THREE.LineSegments( wireframe, lineMaterial );
-  scene.add( wireframeCube );
+  const geometry = new THREE.BoxGeometry(1, 1, 1);
+  const wireframe = new THREE.WireframeGeometry(geometry);
+  const lineMaterial = new THREE.LineBasicMaterial({ color: 0xffffff });
+  const wireframeCube = new THREE.LineSegments(wireframe, lineMaterial);
+  scene.add(wireframeCube);
 
   camera.position.z = 5;
 
@@ -24,21 +31,21 @@
   let mouseY = 0;
 
   // Event listener to track mouse movement
-  window.addEventListener('pointermove', event=>{
+  window.addEventListener("pointermove", (event) => {
     mouseX = (event.clientX / window.innerWidth) * 2 - 1; // Normalize to range [-1, 1]
     mouseY = (event.clientY / window.innerHeight) * 2 + 1; // Normalize to range [-1, 1]
   });
-  window.addEventListener('touchmove', event=>{
+  window.addEventListener("touchmove", (event) => {
     mouseX = (event.touches[0].clientX / window.innerWidth) * 2 - 1; // Normalize to range [-1, 1]
     mouseY = (event.touches[0].clientY / window.innerHeight) * 2 + 1; // Normalize to range [-1, 1]
-  })
+  });
 
   function animate() {
     // Rotate the cube to face the mouse direction
     wireframeCube.rotation.x = mouseY * Math.PI; // Convert normalized value to radians
     wireframeCube.rotation.y = mouseX * Math.PI;
 
-    renderer.render( scene, camera );
+    renderer.render(scene, camera);
   }
 </script>
 
@@ -54,4 +61,6 @@
 </style>
 
 <title>running three.js sample</title>
-<h1>Trial of <a href="https://threejs.org/manual/#en/installation">Three.js</a></h1>
+<h1>
+  Trial of <a href="https://threejs.org/manual/#en/installation">Three.js</a>
+</h1>

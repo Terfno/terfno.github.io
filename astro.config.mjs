@@ -6,10 +6,10 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineConfig({
   site: "https://sueda.jp",
   redirects: {
-    '/pay': {
+    "/pay": {
       status: 308,
-      destination: 'https://scrapbox.io/terfno/pay'
-    }
+      destination: "https://scrapbox.io/terfno/pay",
+    },
   },
   vite: {
     plugins: [tailwindcss()],
