@@ -1,1 +1,54 @@
 @import "tailwindcss";
+
+@theme {
+  --text-base: 0.95rem;
+  --text-lg: 1rem;
+  --text-xl: 1.1rem;
+  --text-2xl: 1.2rem;
+  --text-3xl: 1.3rem;
+  --text-4xl: 1.4rem;
+  --text-5xl: 1.6rem;
+
+  --font-family-sans: "Inter", "Noto Sans JP", system-ui, sans-serif;
+  --font-family-serif: "Source Serif 4", "Noto Serif JP", ui-serif, serif;
+}
+
+@layer base {
+  html {
+    font-size: clamp(16px, 1.1vw, 24px);
+    line-height: 1.6;
+  }
+
+  body {
+    font-family: var(--font-family-sans);
+  }
+
+  h1 {
+    font-family: var(--font-family-serif);
+    font-size: var(--text-5xl);
+    line-height: 1.2;
+  }
+
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    line-height: 2.24;
+  }
+  h2 {
+    font-size: var(--text-4xl);
+  }
+  h3 {
+    font-size: var(--text-3xl);
+  }
+  h4 {
+    font-size: var(--text-2xl);
+  }
+  h5 {
+    font-size: var(--text-xl);
+  }
+  h6 {
+    font-size: var(--text-lg);
+  }
+}

@@ -1,21 +1,132 @@
 ---
-import Layout from '../components/Layout.astro'
+import Body from "../components/Layout.astro";
+import Menu from "../components/menu.astro";
+import IGLogo from "../assets/Instagram_Glyph_White.svg";
+import XLogo from "../assets/X_logo.svg";
 
-const title = "Takahito Sueda"
+const title = "Takahito Sueda";
 ---
 
 <script>
-  console.log("Hello Mate!")
-  console.log("https://scrapbox.io/terfno/contact")
+  console.log("Hello Mate!");
 </script>
 
-<Layout title={title}>
-  <h1>{title}</h1>
-  <p>Scrapbox を活用し始めました。</p>
-  <p>ポートフォリオとして機能する予定です。</p>
-  <p>
-    <a href="https://scrapbox.io/terfno">
-      terfno の Scrapbox
-    </a>
-  </p>
-</Layout>
+<Body title={title}>
+  <div class="mx-auto my-0 block max-w-3xl">
+    <header
+      class="sticky top-0 z-10 grid grid-cols-2 items-center bg-linear-to-b/hsl from-white from-70% to-transparent to-100% pb-8 sm:grid-cols-3"
+    >
+      <h1 class="w-1/2 pl-4 sm:w-6/7">
+        {title}
+      </h1>
+      <a href="/">
+        <img
+          src="https://secure.gravatar.com/avatar/2fda10ff8dccf267309cb551841e96c0.jpg?s=500"
+          class="ml-auto h-20 pr-4 sm:mx-auto sm:p-0"
+        />
+      </a>
+      <Menu />
+    </header>
+    <main class="flex flex-col gap-8 p-4">
+      <section
+        class="gapx-4 m-auto flex flex-wrap justify-center font-serif text-sm"
+      >
+        <p>良く言えば自信があり行動が早い。</p>
+        <p>悪く言えば傲慢で軽薄。</p>
+      </section>
+      <section class="flex flex-col gap-4">
+        <h2>Hi! I'm @terfno.</h2>
+        <p>
+          末田貴一です。インターネットでは terfno (てるふの)
+          と名乗っています。クックパッド株式会社で 2021
+          年からエンジニアとして働いています。カーディストでもあります。トランプを混ぜて楽しむことが趣味です。
+        </p>
+        <p>挨拶と感謝、そして乾杯を大切にしています。</p>
+      </section>
+      <section class="flex flex-col gap-4">
+        <h2>Playlists</h2>
+        <p>
+          毎月 Spotify の Liked Songs を yyyy-mm という名前のプレイリストにして
+          archive
+          しています。思い出したらここに埋め込んでいるプレイリストも更新します。
+        </p>
+        <iframe
+          class="h-28 w-full sm:h-80"
+          data-testid="embed-iframe"
+          style="border-radius:12px"
+          src="https://open.spotify.com/embed/playlist/09qiXXFzJrgHWKHblo2U95?utm_source=generator&theme=0"
+          allowfullscreen=""
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"></iframe>
+        <p>
+          趣味で DJ
+          もしています。直近セトリを組んでやった時のリストを埋め込んでいます。これも思い出したら更新します。
+        </p>
+        <p>
+          最近は rekordbox が Spotify 連携をするようになったので、即興的に DJ
+          することが増え、こういったプレイリストを残すのが難しくなりました……
+          演奏履歴とかからよしなにプレイリストを作らせてほしい。
+        </p>
+        <iframe
+          class="h-28 w-full sm:h-80"
+          data-testid="embed-iframe"
+          style="border-radius:12px"
+          src="https://open.spotify.com/embed/playlist/6jTYPXpUl9YA4pkwS5vuP2?utm_source=generator&theme=0"
+          allowfullscreen=""
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"></iframe>
+        <h3>Past playlists</h3>
+        <div>
+          <iframe
+            class="h-28 w-full"
+            data-testid="embed-iframe"
+            style="border-radius:12px"
+            src="https://open.spotify.com/embed/playlist/5boGgyNf4POReHqxXG2W1n?utm_source=generator"
+            allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"></iframe>
+          <iframe
+            class="h-28 w-full"
+            data-testid="embed-iframe"
+            style="border-radius:12px"
+            src="https://open.spotify.com/embed/playlist/1pYbnbiSg95UcFViEsyNwy?utm_source=generator"
+            allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"></iframe>
+        </div>
+      </section>
+      <section>
+        <h2>About sueda.jp</h2>
+        <p>
+          ぶっちゃけこういうページには何が書かれていたら嬉しいのかわかってないんですよね。でも人の
+          portfolio
+          を見るのは好きで。とりあえず今は自分の音楽性と大事にしていることをシュッとシェアできればそれでいいかな、と思ってこの構成になってます。
+          <span>2026-02</span>
+        </p>
+        <h3>Built with</h3>
+        <p>Astro.js, Tailwind CSS, GitHub Pages</p>
+      </section>
+    </main>
+  </div>
+  <div class="mt-15 bg-black p-4 text-white">
+    <footer class="mx-auto flex max-w-3xl flex-col justify-between pb-20">
+      <Menu />
+      <div
+        class="my-0 flex place-items-baseline justify-between p-4 sm:grid sm:grid-cols-4"
+      >
+        <h2 class="tracking-thin leading-4">👋🙏🍻</h2>
+        <p class="text-center text-sm sm:col-span-2 sm:w-full">
+          (c) 2026 terfno
+        </p>
+        <div class="flex justify-end gap-2 sm:w-full">
+          <a href="https://www.instagram.com/terfno/">
+            <img src={IGLogo.src} class="w-4" />
+          </a>
+          <a href="https://x.com/terfno_mai">
+            <img src={XLogo.src} class="p-0.4 w-4" />
+          </a>
+        </div>
+      </div>
+    </footer>
+  </div>
+</Body>
