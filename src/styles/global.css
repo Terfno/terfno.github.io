@@ -79,7 +79,6 @@
   html {
     font-size: clamp(16px, 1.1vw, 24px);
     line-height: 1.6;
-    background-color: var(--color-black);
   }
 
   body {
