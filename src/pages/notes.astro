@@ -1,2 +1,64 @@
 ---
+import Layout from "../components/Layout.astro";
+
+const title = "terfno's Notes";
 ---
+
+<Layout title={title}>
+  <div class="flex flex-col gap-8 p-4">
+    <section class="flex flex-col gap-4">
+      <h2>Personal Knowledge Management</h2>
+      <p>
+        Personal Knowledge Management の場所として、Cosense(旧 Scrapbox)
+        を使っています。興味があれば覗いてみてください。
+      </p>
+      <p>
+        <a
+          class="underline decoration-2 underline-offset-2"
+          href="https://scrapbox.io/terfno/">terfno の Scrapbox</a
+        >
+      </p>
+      <p>
+        日記的なこと、その日の思いつきや学び、技術的なメモを書いてみたりしています。
+        とにかく未完成でも公開されていて、他者が見ることができて、未来の僕が後で見返せることを重視しています。
+      </p>
+      <p>
+        微妙なところとして、完成された状態の page
+        を作ることに気持ちが全くないので、意思決定の結果を書くことが少なく、過程や思考の断片が多いです。思考の過程を記録しているだけの
+        page が多い傾向にあります。
+      </p>
+    </section>
+    <section class="flex flex-col gap-4">
+      <h2>Written by terfno</h2>
+      <p>
+        記事や blog のようなものも同じ場所に書いてしまっています。
+        近い将来、このように記事として書き上がったページを外に括り出したいと考えていますが、既存の
+        page とのリンクが切れるのが嫌でなかなか踏み出せていません。
+      </p>
+      <ol class="list-inside list-disc">
+        <li>
+          <a
+            class="underline decoration-2 underline-offset-2"
+            href="https://scrapbox.io/terfno/articles_written_by_terfno"
+          >
+            Articles written by terfno
+          </a>
+        </li>
+        <li>
+          <a
+            class="underline decoration-2 underline-offset-2"
+            href="https://scrapbox.io/terfno/cardistry_articles_written_by_terfno"
+          >
+            Cardistry articles written by terfno
+          </a>
+        </li>
+      </ol>
+      <p>
+        ところで Cosense には Social
+        的機能が全くありません。もし気になる表現や内容があれば <a
+          href="/contact">Contact</a
+        > から連絡してもらえると嬉しいです。
+      </p>
+    </section>
+  </div>
+</Layout>
