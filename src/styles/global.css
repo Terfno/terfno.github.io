@@ -98,7 +98,7 @@
   h4,
   h5,
   h6 {
-    line-height: 2.24;
+    line-height: calc(1.4 * 1.4);
   }
   h2 {
     font-size: var(--text-4xl);

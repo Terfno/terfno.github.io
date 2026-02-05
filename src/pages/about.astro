@@ -1,2 +1,78 @@
 ---
+import Layout from "../components/Layout.astro";
+import SelfIntroduce from "../components/SelfIntroduce.astro";
+
+const title = "About me";
 ---
+
+<Layout title={title}>
+  <div class="flex flex-col gap-8 p-4">
+    <section class="flex flex-col gap-4">
+      <h2>Takahito Sueda</h2>
+      <SelfIntroduce />
+      <h3>In English</h3>
+      <p>
+        My name is Takahito Sueda. I’m from Japan and also known as “terfno.”
+        I’m a full-time engineer at Cookpad and have been working there since
+        2021. I’m also a cardist—I perform cardistry and dance with cards. My
+        first language is Japanese. I can speak English at a basic
+        conversational level. I’m currently operating in the JST time zone.
+      </p>
+      <p>
+        I value proper greetings, expressing gratitude, and sharing a toast.
+      </p>
+      <h3>Pronunciation</h3>
+      <p>
+        “terfno” is just an ID and doesn’t have an official pronunciation. If
+        needed, you can pronounce it like “tell-who-no.”
+      </p>
+      <p>
+        You can call me “Taka” for short. “Takahito” is quite long, and “Sueda”
+        is often difficult for native English speakers to pronounce. If you’d
+        like, you can try pronouncing my name in the Japanese way. If my name is
+        pronounced using English-style pronunciation, I may not recognize it and
+        might not respond.
+      </p>
+      <h3>a.k.a.</h3>
+      <p>
+        [Sueda Takahito], [Takahito Sueda], [末田 貴一], [スエダ タカヒト],
+        [terfno], [てるふの]
+      </p>
+    </section>
+    <section class="flex flex-col gap-4">
+      <h2>Skills</h2>
+      <h3>As Professional Software Engineer</h3>
+      <p>
+        Rubyist です。業務では主に Ruby on Rails で仕事をしています。
+        バックエンドを担当することが多いですが React や Next.js
+        を使ったプロジェクトに参加したり、必要であれば渉外対応にも同席します。
+        仕事でも趣味でもクラウドインフラは AWS を使うことが多いです。 趣味だと
+        Cloudflare も最近は使います。
+      </p>
+      <p>
+        仕事のスタイルとして、不確定要素の多い状況でもコアな課題を選択し、整理し、分解し、解決策をそれぞれ提示し、その領域の責任者としてスタンスを示して意思決定を補助、あるいは意思決定を代行することが可能です。理想の定義、現状のギャップ、使えるリソースを総合して今取れる最善策を提案し、実行することが可能です。課題の構造化と解決のスタンスを評価されることが多いです。
+        特定ドメインに対して初心者の状態から、意思決定のために必要な情報を収集、理解して自走できる状態へ移行する速度の速さと精度を評価されることも多いです。
+      </p>
+      <h3>Extra</h3>
+      <p>
+        プロとしての経験はありませんが、Go, Python, Rust, フレームワークですが
+        Astro について経験があります。 Unity (C#) を使った VR
+        向けアプリケーション開発の経験があります。
+      </p>
+      <p>
+        2D/3D CAD を引けます。経験があるのは SolidWorks, Autodesk Fusion,
+        FreeCAD の3つです。 また電子回路設計に興味があり、KiCad
+        を使った基板設計の経験があります。
+      </p>
+      <p>
+        何かを作ることについての興味関心が強く、必要に応じてあらゆるレイヤーと領域の技術を学び、自分で手を動かすことに喜びを感じます。
+      </p>
+      <h3>Etc......</h3>
+      <p>
+        食品衛生責任者の資格を持っていて、料理の技術にも強い関心があります。最近は分子ガストロノミーに興味があり勉強しているところです。
+        得意な料理は親子丼, 味噌汁, ボンゴレビアンコ, ペスカトーレロッソ,
+        麻婆豆腐です。
+      </p>
+    </section>
+  </div>
+</Layout>
