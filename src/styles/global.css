@@ -115,10 +115,4 @@
   h6 {
     font-size: var(--text-lg);
   }
-
-  a {
-    text-decoration: underline;
-    text-underline-offset: 2px;
-    text-decoration-thickness: 1.5px;
-  }
 }
