@@ -20,6 +20,7 @@ const { title, noindex } = Astro.props;
           src="https://secure.gravatar.com/avatar/2fda10ff8dccf267309cb551841e96c0.jpg?s=500"
           class="ml-auto h-20 pr-4 sm:mx-auto sm:p-0"
           alt="self portrait, click img to back to home"
+          loading="eager"
         />
       </a>
       <ol
@@ -32,7 +33,7 @@ const { title, noindex } = Astro.props;
   <main class="mx-auto my-0 block max-w-3xl">
     <slot />
   </main>
-  <footer class="mt-15 bg-black p-4 text-white">
+  <footer class="mt-15 bg-black p-4 text-white outline-4 outline-black">
     <div class="mx-auto flex max-w-3xl flex-col justify-between">
       <ol
         class="grid grid-cols-2 px-4 py-4 text-right sm:flex sm:items-center sm:justify-between sm:gap-4 sm:py-0"

@@ -1,2 +1,58 @@
 ---
+import Layout from "../components/Layout.astro";
+
+const title = "Contact to terfno";
 ---
+
+<Layout title={title} noindex={true}>
+  <div class="flex flex-col gap-8 p-4">
+    <section class="flex flex-col gap-4">
+      <h2>Contact</h2>
+      <p>
+        お仕事の連絡は
+        <a
+          class="underline decoration-2 underline-offset-2"
+          href="mailto: sueda.takahito@gmail.com"
+        >
+          sueda.takahito@gmail.com
+        </a>
+        までお願いします。可能な限り↓にあるカジュアルな方法で連絡されたほうが嬉しいです。
+      </p>
+    </section>
+    <section>
+      <h2>カジュアルな連絡方法</h2>
+      <ol class="list-inside list-disc">
+        <li>
+          <a
+            class="underline decoration-2 underline-offset-2"
+            href="https://x.com/terfno_mai">@terfno_mai</a
+          > on X.
+        </li>
+        <li>
+          <a
+            class="underline decoration-2 underline-offset-2"
+            href="https://instagram.com/terfno">@terfno</a
+          > on Instagram as cardist.
+        </li>
+        <li>
+          <a
+            class="underline decoration-2 underline-offset-2"
+            href="https://instagram.com/photo.terfno">@photo.terfno</a
+          > on Instagram as photographer.
+        </li>
+        <li>
+          <a
+            class="underline decoration-2 underline-offset-2"
+            href="https://github.com/terfno">@terfno</a
+          > on GitHub.
+        </li>
+        <li>
+          <a
+            class="underline decoration-2 underline-offset-2"
+            href="https://discord.gg/nNB3PvYX">@terfno</a
+          > on Discord.
+        </li>
+      </ol>
+    </section>
+  </div>
+</Layout>
