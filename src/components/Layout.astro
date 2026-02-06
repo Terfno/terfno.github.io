@@ -9,24 +9,22 @@ const { title, noindex } = Astro.props;
 
 <Body title={title} noindex={noindex}>
   <header
-    class="sticky top-0 z-10 bg-linear-to-b/hsl from-white from-70% to-transparent to-100%"
+    class="sticky top-0 z-10 bg-linear-to-b/hsl from-white from-70% to-transparent to-100% p-4"
   >
-    <div
-      class="mx-auto my-0 mb-4 grid max-w-3xl grid-cols-2 items-center pb-4 sm:grid-cols-3"
-    >
+    <div class="mx-auto my-0 mb-4 grid max-w-3xl grid-cols-3 items-center pb-4">
       <h1 class="mr-auto w-1/2 sm:w-6/7">
         {title}
       </h1>
       <a href="/">
         <img
           src="https://secure.gravatar.com/avatar/2fda10ff8dccf267309cb551841e96c0.jpg?s=500"
-          class="ml-auto h-20 sm:mx-auto sm:p-0"
+          class="mx-auto h-20 p-0"
           alt="self portrait, click img to back to home"
           loading="eager"
         />
       </a>
       <ol
-        class="col-span-2 flex items-center justify-between text-right sm:col-span-1 sm:ml-auto sm:gap-4"
+        class="col-span-1 ml-auto grid grid-cols-1 p-0 text-right sm:flex sm:items-center sm:justify-between sm:gap-4"
       >
         <MenuItems />
       </ol>
