@@ -2,6 +2,12 @@
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/terfno/terfno.github.io)
 
+## Env
+
+`direnv` をつかって nodenv と volta の共存をしている。
+
+- 最初に `direnv allow` が必要かも。
+
 ## 🚀 Project Structure
 
 Inside of your Astro project, you'll see the following folders and files:
