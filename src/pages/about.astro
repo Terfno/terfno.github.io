@@ -5,6 +5,14 @@ import SelfIntroduce from "../components/SelfIntroduce.astro";
 const title = "About terfno";
 ---
 
+<style>
+  a {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
+  }
+</style>
+
 <Layout title={title}>
   <div class="flex flex-col gap-8 p-4">
     <section class="flex flex-col gap-4">
@@ -15,13 +23,13 @@ const title = "About terfno";
         My name is Takahito Sueda. I’m from Japan and also known as “terfno.”
         I’m a full-time engineer at Cookpad and have been working there since
         2021. I’m also a cardist—I perform cardistry and dance with cards. My
-        first language is Japanese. I can speak English at a basic
+        first language is Japanese. I can communicate in English at a basic
         conversational level. I’m currently operating in the JST time zone.
       </p>
       <p>
         I value proper greetings, expressing gratitude, and sharing a toast.
       </p>
-      <h3>Pronunciation</h3>
+      <h3>Name & Pronunciation</h3>
       <p>
         “terfno” is just an ID and doesn’t have an official pronunciation. If
         needed, you can pronounce it like “tell-who-no.”
@@ -31,48 +39,110 @@ const title = "About terfno";
         is often difficult for native English speakers to pronounce. If you’d
         like, you can try pronouncing my name in the Japanese way. If my name is
         pronounced using English-style pronunciation, I may not recognize it and
-        might not respond.
+        might not respond. So, please feel free to call me “Taka”.
       </p>
-      <h3>a.k.a.</h3>
+      <h4>a.k.a.</h4>
+      <ul class="list-inside list-disc">
+        <li>Sueda Takahito</li>
+        <li>Takahito Sueda</li>
+        <li>末田 貴一</li>
+        <li>スエダ タカヒト</li>
+        <li>terfno</li>
+        <li>てるふの</li>
+      </ul>
+    </section>
+    <section class="flex flex-col gap-4">
+      <h2>Professional Experience</h2>
+      <h3>As Software Engineer</h3>
       <p>
-        [Sueda Takahito], [Takahito Sueda], [末田 貴一], [スエダ タカヒト],
-        [terfno], [てるふの]
+        Rubyist です。業務では主に Ruby on Rails を書いています。
+        バックエンドを担当することが多いですが React や Next.js
+        を使ったプロジェクトに参加したり、必要であれば渉外対応にも同席します。
+      </p>
+      <ul class="list-inside list-disc">
+        <li>バックエンド: Ruby on Rails</li>
+        <li>フロントエンド: React, Next.js</li>
+        <li>インフラ: AWS (仕事/趣味), Cloudflare (趣味)</li>
+      </ul>
+      <p>
+        仕事のスタイルとして、不確定要素の多い状況でもコアな課題を選択し、整理し、分解し、解決策を提示し、その領域の責任者としてスタンスを示して意思決定を補助、あるいは意思決定を代行できます。理想の定義、現状のギャップ、使えるリソースを総合して今取れる最善策を提案し、実行できます。
+      </p>
+      <p>
+        課題の構造化と解決のスタンスを評価されることが多いです。特定ドメインに対して初心者の状態から、意思決定のために必要な情報を収集、理解して自走できる状態へ移行する速度の速さと精度を評価されることも多いです。
       </p>
     </section>
     <section class="flex flex-col gap-4">
-      <h2>Skills</h2>
-      <h3>As Professional Software Engineer</h3>
+      <h2>Volunteer Work</h2>
+      <h3>RubyKaigi NOC</h3>
       <p>
-        Rubyist です。業務では主に Ruby on Rails で仕事をしています。
-        バックエンドを担当することが多いですが React や Next.js
-        を使ったプロジェクトに参加したり、必要であれば渉外対応にも同席します。
-        仕事でも趣味でもクラウドインフラは AWS を使うことが多いです。 趣味だと
-        Cloudflare も最近は使います。
+        <a href="https://rubykaigi.org/2025/about/">RubyKaigiNOC</a> に 2022 年から毎年参加していています。
+        主に L1 のサポートと最近は AP を立たせる業務を担当しています。とくに AP Stand
+        については一家言あって、wifistand.com のスタンド部分を使うのはあんまり推奨できないなぁと思いながら過ごしています。
+        ブラケットは選択肢がほぼないので wifistand.com に依存してよいと思います。スタンドはかなり議論の余地あり。
+        現時点ではスタジオ撮影で使われる照明用のスタンドを活用するのがおすすめです。
       </p>
+      <h3>Design & Media Operations</h3>
+      ボランティアでデザインや映像制作、配信オペレーションを担当した経験があります。
+      <ul class="list-inside list-disc">
+        <li>
+          グラフィックデザイン: Adobe Illustrator/InDesign, Figma, Affinity
+        </li>
+        <li>写真編集: Adobe Lightroom/Photoshop, Luminar AI, Affinity</li>
+        <li>映像制作: Adobe After Effects</li>
+        <li>動画編集: Adobe Premiere Pro, DaVinci Resolve</li>
+        <li>配信/録画: OBS, Blackmagic Design ATEM</li>
+      </ul>
+      <h4>ICTSC</h4>
       <p>
-        仕事のスタイルとして、不確定要素の多い状況でもコアな課題を選択し、整理し、分解し、解決策をそれぞれ提示し、その領域の責任者としてスタンスを示して意思決定を補助、あるいは意思決定を代行することが可能です。理想の定義、現状のギャップ、使えるリソースを総合して今取れる最善策を提案し、実行することが可能です。課題の構造化と解決のスタンスを評価されることが多いです。
-        特定ドメインに対して初心者の状態から、意思決定のために必要な情報を収集、理解して自走できる状態へ移行する速度の速さと精度を評価されることも多いです。
+        ICTSC
+        というコンテストの実行委員会にデザイナーとして参加しています。ICTSC
+        とは学生時代にも運営として参加していて、ICTSC 2019
+        ではデザイナーとして、ICTSC 2020
+        ではデザイナーと配信オペレーションの担当者として参加していました。<a
+          href="https://icttoracon.net/ictsc-ec/ictsc2025">ICTSC 2025</a
+        >
+        から社会人のデザイナーとして再び参加しています。
       </p>
-      <h3>Extra</h3>
+      <h4>Tokyo RubyKaigi 12</h4>
+      <p>
+        東京 Ruby 会議 12 にはオーガナイザーとして関わり、<a
+          href="https://github.com/tokyorubykaigi12/tokyo12"
+        >
+          LP の実装</a
+        >と<a
+          href="https://www.youtube.com/watch?v=mRG4kISPrKI&list=PLLRk6zYzVN4NqCGkSRPIEni7Z3g2A1aFe"
+          >発表の録画</a
+        >,編集,公開を担当しました。録画オペレーションは ICTSC
+        での配信と似たような構成で、 OBS+ATEM Mini Extreme ISO で行い、Davinci
+        Resolve で編集しました。
+      </p>
+    </section>
+    <section class="flex flex-col gap-4">
+      <h2>Additional Experience</h2>
       <p>
         プロとしての経験はありませんが、Go, Python, Rust, フレームワークですが
-        Astro について経験があります。 Unity (C#) を使った VR
-        向けアプリケーション開発の経験があります。
+        Astro について経験があります。 この sueda.jp も Astro と Tailwind CSS
+        を使っています。また、Unity (C#) を使った Oculus 製 VR
+        デバイス向けアプリケーション開発の経験があります。
       </p>
       <p>
         2D/3D CAD を引けます。経験があるのは SolidWorks, Autodesk Fusion,
-        FreeCAD の3つです。 また電子回路設計に興味があり、KiCad
-        を使った基板設計の経験があります。
+        FreeCAD の 3 つです。 また電子回路設計に興味があり、KiCad
+        を使った基板設計と実装の経験があります。工場実習で必要な最低限のアーク溶接、CNC
+        旋盤、CNC フライスについてスキルと経験があります。
       </p>
       <p>
         何かを作ることについての興味関心が強く、必要に応じてあらゆるレイヤーと領域の技術を学び、自分で手を動かすことに喜びを感じます。
       </p>
-      <h3>Etc......</h3>
+    </section>
+    <section class="flex flex-col gap-4">
+      <h2>Licenses</h2>
       <p>
         食品衛生責任者の資格を持っていて、料理の技術にも強い関心があります。最近は分子ガストロノミーに興味があり勉強しているところです。
         得意な料理は親子丼, 味噌汁, ボンゴレビアンコ, ペスカトーレロッソ,
         麻婆豆腐です。
       </p>
+      <p>自動普通二輪、普通自動車運転免許を持っています。</p>
     </section>
   </div>
 </Layout>
