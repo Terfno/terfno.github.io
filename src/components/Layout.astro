@@ -49,14 +49,10 @@ const { title, noindex } = Astro.props;
         </li>
         <MenuItems />
       </ol>
-      <div
-        class="flex place-items-baseline justify-between py-4 sm:grid sm:grid-cols-4"
-      >
+      <div class="grid w-full grid-cols-4 place-items-baseline py-4">
         <h2 class="tracking-thin leading-4">👋🙏🍻</h2>
-        <p class="text-center text-sm sm:col-span-2 sm:w-full">
-          (c) 2026 terfno
-        </p>
-        <div class="flex justify-end gap-2 sm:w-full">
+        <p class="col-span-2 w-full text-center text-sm">(c) 2026 terfno</p>
+        <div class="flex w-full justify-end gap-2">
           <a href="https://www.instagram.com/terfno/">
             <img src={IGLogo.src} class="w-4" alt="instagram logo" />
           </a>
