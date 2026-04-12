@@ -30,10 +30,12 @@ const { title, noindex } = Astro.props;
       </ol>
     </div>
   </header>
-  <main class="mx-auto my-0 block max-w-3xl grow">
-    <slot />
+  <main class="mx-auto my-0 block grow p-4">
+    <div class="max-w-3xl">
+      <slot />
+    </div>
   </main>
-  <footer class="mt-15 bg-black p-4 text-white outline-4 outline-black pb-20">
+  <footer class="mt-15 bg-black p-4 pb-20 text-white outline-4 outline-black">
     <div class="mx-auto flex max-w-3xl flex-col justify-between">
       <ol
         class="grid grid-cols-2 p-0 text-right sm:flex sm:items-center sm:justify-between sm:gap-4"
