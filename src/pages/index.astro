@@ -1,6 +1,7 @@
 ---
 import Layout from "../components/Layout.astro";
 import SelfIntroduce from "../components/SelfIntroduce.astro";
+import SpotifyPlaylist from "../components/SpotifyPlaylist.astro";
 
 const title = "Takahito Sueda";
 ---
@@ -30,14 +31,12 @@ const title = "Takahito Sueda";
         archive
         しています。思い出したらここに埋め込んでいるプレイリストも更新します。
       </p>
-      <iframe
-        class="h-40 w-full sm:h-100"
+      <SpotifyPlaylist
+        additional_class="sm:h-100"
         title="2026-04"
-        data-testid="embed-iframe"
-        style="border-radius:12px"
-        src="https://open.spotify.com/embed/playlist/2qmW7RgoU00KhY4JRziBkG?utm_source=generator&theme=0"
-        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-        loading="eager"></iframe>
+        url="https://open.spotify.com/embed/playlist/2qmW7RgoU00KhY4JRziBkG?utm_source=generator&theme=0"
+        loading="eager"
+      />
       <p>
         趣味で DJ
         もしています。直近セトリを組んでやった時のリストを埋め込んでいます。これも思い出したら更新します。
@@ -47,40 +46,25 @@ const title = "Takahito Sueda";
         することが増え、こういったプレイリストを残すのが難しくなりました……
         演奏履歴とかからよしなにプレイリストを作らせてほしい。
       </p>
-      <iframe
-        class="h-40 w-full sm:h-100"
-        title="2025-06-01 ukfes#5 / DJ terfno"
-        data-testid="embed-iframe"
-        style="border-radius:12px"
-        src="https://open.spotify.com/embed/playlist/6jTYPXpUl9YA4pkwS5vuP2?utm_source=generator&theme=0"
-        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-        loading="lazy"></iframe>
+      <SpotifyPlaylist
+        additional_class="sm:h-100"
+        title="2025-12-31 ukfes#4 / DJ terfno"
+        url="https://open.spotify.com/embed/playlist/6jTYPXpUl9YA4pkwS5vuP2?utm_source=generator&theme=0"
+      />
       <h3>Past playlists</h3>
       <div>
-        <iframe
-          class="h-40 w-full"
+        <SpotifyPlaylist
           title="2026-03"
-          data-testid="embed-iframe"
-          style="border-radius:12px"
-          src="https://open.spotify.com/embed/playlist/32AQc3HMiqHschPJ65GBuZ?utm_source=generator"
-          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-          loading="eager"></iframe>
-        <iframe
-          class="h-40 w-full"
+          url="https://open.spotify.com/embed/playlist/32AQc3HMiqHschPJ65GBuZ?utm_source=generator"
+        />
+        <SpotifyPlaylist
           title="2026-02"
-          data-testid="embed-iframe"
-          style="border-radius:12px"
-          src="https://open.spotify.com/embed/playlist/4QRJiIWL8Tn9qDCmCYGe3x?utm_source=generator"
-          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-          loading="lazy"></iframe>
-        <iframe
-          class="h-40 w-full"
+          url="https://open.spotify.com/embed/playlist/4QRJiIWL8Tn9qDCmCYGe3x?utm_source=generator"
+        />
+        <SpotifyPlaylist
           title="2026-01"
-          data-testid="embed-iframe"
-          style="border-radius:12px"
-          src="https://open.spotify.com/embed/playlist/09qiXXFzJrgHWKHblo2U95?utm_source=generator"
-          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-          loading="lazy"></iframe>
+          url="https://open.spotify.com/embed/playlist/09qiXXFzJrgHWKHblo2U95?utm_source=generator"
+        />
       </div>
     </section>
     <section class="flex flex-col gap-4">

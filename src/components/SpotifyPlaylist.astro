@@ -1,0 +1,12 @@
+---
+const { title, url, additional_class, loading } = Astro.props;
+---
+
+<iframe
+  class={`h-40 w-full ${additional_class}`}
+  title={title}
+  data-testid="embed-iframe"
+  style="border-radius:12px"
+  src={url}
+  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+  loading={loading || "lazy"}></iframe>
