@@ -1,4 +1,5 @@
 User-agent: *
 Disallow: /pay
 Disallow: /contact
+Disallow: /lab/contact
 Allow: /

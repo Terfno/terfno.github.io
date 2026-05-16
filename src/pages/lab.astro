@@ -1,0 +1,111 @@
+---
+import Layout from "../components/lab/Layout.astro";
+
+const description =
+  "末景研究所は、ソフトウェアエンジニア / デザイナー の Takahito Sueda (a.k.a. terfno) が個人事業主として活動する際の屋号です。";
+---
+
+<Layout description={description}>
+  <section class="flex scroll-mt-36 flex-col gap-4" id="about">
+    <p class="text-neutral-600">{description}</p>
+  </section>
+
+  <section class="flex flex-col gap-8">
+    <div class="flex flex-col gap-2">
+      <h2>できること</h2>
+      <p class="text-neutral-600">
+        ソフトウェア開発・技術コンサルティング・デザインと映像制作など、幅広い領域に対応できます。複数の領域をまたいだ依頼も歓迎します。
+      </p>
+    </div>
+
+    <div class="flex flex-col gap-4">
+      <h3>ソフトウェア開発</h3>
+      <p>
+        Rubyist です。業務では主に Ruby on Rails を書いています。
+        バックエンドを担当することが多いですが、React や Next.js
+        を使ったフロントエンド開発や、必要であれば渉外対応にも同席します。
+      </p>
+      <ul class="list-inside list-disc space-y-1 pl-2">
+        <li>バックエンド: Ruby on Rails</li>
+        <li>フロントエンド: React, Next.js</li>
+        <li>インフラ: AWS, Cloudflare</li>
+      </ul>
+      <p>
+        上記以外にも、AI agent 環境整備、MCP サーバー開発、Go を使った web
+        backend、Python/Elasticsearch を採用した採用した検索 API、Unity(C#) での
+        VR
+        デバイス向けコンテンツの実装経験があります。未知の技術へのキャッチアップは早い方です。
+      </p>
+    </div>
+
+    <div class="flex flex-col gap-4">
+      <h3>技術コンサルティング / 意思決定支援</h3>
+      <p>
+        何が問題なのかよくわからない、という段階から関われます。整理して方針を出すだけでなく、そのまま自分で実装ができるのも持ち味です。
+      </p>
+      <ul class="list-inside list-disc space-y-1 pl-2">
+        <li>技術戦略・アーキテクチャ選定の壁打ち、レビュー</li>
+        <li>新規プロダクト・新規事業の技術的フィジビリティ検証</li>
+        <li>採用技術の選定支援、PoC、プロトタイピング</li>
+        <li>開発現場と事業側の間に立っての要件整理、合意形成支援</li>
+        <li>AI agent / MCP 活用を含む、開発組織の生産性改善</li>
+      </ul>
+      <p>
+        前職では社長直下のプロジェクトを2年間担当しました。何を作るかの定義から、技術選定、実装、社内での合意形成まで一人で回していました。知らない領域でも必要な情報を集めてなんとかするのは得意です。
+      </p>
+    </div>
+
+    <div class="flex flex-col gap-4">
+      <h3>デザイン・映像制作</h3>
+      <p>デザインや映像制作、配信オペレーションも対応可能です。</p>
+      <ul class="list-inside list-disc space-y-1 pl-2">
+        <li>
+          グラフィックデザイン: Adobe Illustrator/InDesign, Figma, Affinity
+        </li>
+        <li>写真編集: Adobe Lightroom/Photoshop, Luminar AI, Affinity</li>
+        <li>映像制作: Adobe After Effects</li>
+        <li>動画編集: Adobe Premiere Pro, DaVinci Resolve</li>
+        <li>配信/録画: OBS, Blackmagic Design ATEM</li>
+      </ul>
+      <p>
+        2025年から ICTSC
+        というコンテストの実行委員会にデザイナーとして参加しており、会場装飾・名刺・ステッカー等を担当しています。eBPF
+        Japan Meetup のステッカーデザインもスポットで担当しました。
+      </p>
+      <p>
+        ハードウェア方面では、3D Printing（SolidWorks, Autodesk Fusion,
+        FreeCAD）や KiCad
+        を使った基本的な電子回路設計の経験もあります。興味があればお声がけください。
+      </p>
+    </div>
+  </section>
+
+  <section class="flex scroll-mt-36 flex-col gap-4" id="status">
+    <h2>ステータス</h2>
+    <p>
+      末景研究所は屋号です。末田貴一として<a
+        class="underline decoration-2 underline-offset-2"
+        href="https://www.invoice-kohyo.nta.go.jp/regno-search/detail?selRegNo=2810160633505"
+        >適格請求書発行事業者の登録</a
+      >をしています。
+    </p>
+    <p>
+      2026年6月は稼働に余裕があり、週30〜40h
+      程度のコミットが可能です。実装を含む短期の業務委託や短納期の印刷物を含むデザイン制作などを受けられます。通常通り、技術顧問・アドバイザリーなどの中長期での参画も別途ご相談ください。
+    </p>
+    <p>こんな関わり方ができます。</p>
+    <ul class="list-inside list-disc space-y-1 pl-2">
+      <li>単発の技術コンサルティング、壁打ち、設計レビュー</li>
+      <li>週数時間〜の技術顧問・アドバイザリー契約</li>
+      <li>新規プロダクトの立ち上げ伴走（設計から実装まで）</li>
+      <li>デザイン制作、配信・映像オペレーション</li>
+    </ul>
+    <p>
+      仕事のご依頼やご相談がある場合は、<a
+        class="underline decoration-2 underline-offset-2"
+        href="/lab/contact">Contact</a
+      >
+      よりお気軽にご連絡ください。
+    </p>
+  </section>
+</Layout>

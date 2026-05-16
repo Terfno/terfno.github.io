@@ -1,8 +1,7 @@
 ---
-import Body from "../components/HtmlShell.astro";
-import MenuItems from "../components/MenuItems.astro";
-import IGLogo from "../assets/Instagram_Glyph_White.svg";
-import XLogo from "../assets/X_logo.svg";
+import Body from "./HtmlShell.astro";
+import MenuItems from "./MenuItems.astro";
+import Footer from "./Footer.astro";
 
 const { title, noindex } = Astro.props;
 ---
@@ -35,40 +34,5 @@ const { title, noindex } = Astro.props;
       <slot />
     </div>
   </main>
-  <footer class="mt-15 bg-black p-4 pb-20 text-white outline-4 outline-black">
-    <div class="mx-auto flex max-w-3xl flex-col justify-between">
-      <ol
-        class="grid grid-cols-2 p-0 text-right sm:flex sm:items-center sm:justify-between sm:gap-4"
-      >
-        <li class="row-span-5">
-          <a href="/">
-            <img
-              src="https://secure.gravatar.com/avatar/2fda10ff8dccf267309cb551841e96c0.jpg?s=500"
-              class="max-h-20 p-0 sm:mx-auto"
-              alt="self portrait, click img to back to home"
-            />
-          </a>
-        </li>
-        <MenuItems />
-      </ol>
-      <div class="grid w-full grid-cols-4 place-items-baseline py-4">
-        <h2 class="tracking-thin leading-4">👋🙏🍻</h2>
-        <p class="col-span-2 w-full text-center text-sm">(c) 2026 terfno</p>
-        <div class="flex w-full justify-end gap-2">
-          <a href="https://www.instagram.com/terfno/">
-            <img src={IGLogo.src} class="w-4" alt="instagram logo" />
-          </a>
-          <a href="https://x.com/terfno_mai">
-            <img src={XLogo.src} class="p-0.4 w-4" alt="x logo" />
-          </a>
-        </div>
-      </div>
-      <div
-        class="flex w-full flex-wrap justify-center gap-1 text-center text-xs"
-      >
-        <p>This website is built with Astro, Tailwind CSS</p>
-        <p>and hosted on GitHub Pages.</p>
-      </div>
-    </div>
-  </footer>
+  <Footer />
 </Body>
