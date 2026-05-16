@@ -73,6 +73,7 @@
 
   --color-black: oklch(0.147 0.004 49.25);
   --color-white: oklch(0.985 0 0);
+  --color-indigo: #1b2a41;
 }
 
 @layer base {

@@ -1,6 +1,7 @@
 ---
 import Footer from "../Footer.astro";
 import MenuItems from "./MenuItems.astro";
+import labIcon from "../../assets/lab.svg";
 import "../../styles/global.css";
 
 const { description, noindex } = Astro.props;
@@ -14,6 +15,7 @@ const { description, noindex } = Astro.props;
     <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="generator" content={Astro.generator} />
+    <link rel="icon" type="image/svg+xml" href={labIcon.src} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,7 +25,7 @@ const { description, noindex } = Astro.props;
   </head>
   <body class="flex min-h-screen flex-col">
     <header
-      class="sticky top-0 z-10 bg-linear-to-b/hsl from-white from-70% to-transparent to-100% p-4"
+      class="text-indigo sticky top-0 z-10 bg-linear-to-b/hsl from-white from-70% to-transparent to-100% p-4"
     >
       <div
         class="mx-auto my-0 mb-4 grid max-w-3xl grid-cols-2 items-center pb-4"
