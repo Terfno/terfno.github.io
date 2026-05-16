@@ -1,0 +1,51 @@
+---
+import Footer from "../Footer.astro";
+import MenuItems from "./MenuItems.astro";
+import "../../styles/global.css";
+
+const { description, noindex } = Astro.props;
+---
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    {noindex && <meta name="robots" content="noindex" />}
+    <title>末景研究所 | Suekage Lab © 2022–????</title>
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400&family=Noto+Serif+JP:wght@400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="flex min-h-screen flex-col">
+    <header
+      class="sticky top-0 z-10 bg-linear-to-b/hsl from-white from-70% to-transparent to-100% p-4"
+    >
+      <div
+        class="mx-auto my-0 mb-4 grid max-w-3xl grid-cols-2 items-center pb-4"
+      >
+        <h1 class="mr-auto font-serif">
+          <span>末景研究所 | Suekage Lab</span>
+          <span class="font-sans">©2022–????</span>
+        </h1>
+        <ol
+          class="col-span-1 ml-auto grid grid-cols-1 p-0 text-right sm:flex sm:items-center sm:justify-between sm:gap-4"
+        >
+          <MenuItems />
+        </ol>
+      </div>
+    </header>
+    <main class="grow p-4">
+      <div class="mx-auto flex max-w-3xl flex-col gap-12">
+        <slot />
+      </div>
+    </main>
+    <Footer>
+      <MenuItems />
+    </Footer>
+  </body>
+</html>
