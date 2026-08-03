@@ -4,9 +4,8 @@
 
 ## Env
 
-`direnv` をつかって nodenv と volta の共存をしている。
-
-- 最初に `direnv allow` が必要かも。
+Node.js は mise で管理している。プロジェクトルートで `mise install` を実行すると、
+`mise.toml` に記載されたバージョンの Node.js と npm が利用できる。
 
 ## 🚀 Project Structure
 
@@ -33,7 +32,8 @@ All commands are run from the root of the project, from a terminal:
 
 | Command                     | Action                                           |
 | :-------------------------- | :----------------------------------------------- |
-| `npm install`               | Installs dependencies                            |
+| `mise install`              | Installs the project toolchain                  |
+| `npm ci`                    | Installs dependencies from `package-lock.json`  |
 | `npm run dev`               | Starts local dev server at `localhost:4321`      |
 | `npm run build`             | Build your production site to `./dist/`          |
 | `npm run preview`           | Preview your build locally, before deploying     |
