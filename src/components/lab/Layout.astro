@@ -5,12 +5,14 @@ import labIcon from "../../assets/lab.svg";
 import "../../styles/global.css";
 
 const { description, noindex } = Astro.props;
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site).href;
 ---
 
 <html>
   <head>
     <meta charset="utf-8" />
     {noindex && <meta name="robots" content="noindex" />}
+    <link rel="canonical" href={canonicalUrl} />
     <title>末景研究所 | Suekage Lab © 2022–????</title>
     <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width,initial-scale=1" />

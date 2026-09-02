@@ -2,6 +2,7 @@
 import "../styles/global.css";
 
 const { title, noindex, description } = Astro.props;
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site).href;
 ---
 
 <html lang="en">
@@ -13,6 +14,7 @@ const { title, noindex, description } = Astro.props;
         "Takahito Sueda (terfno)'s personal website - About, experience, notes, and contact information"}
     />
     {noindex ? <meta name="robots" content="noindex" /> : null}
+    <link rel="canonical" href={canonicalUrl} />
     <link rel="preconnect" href="https://secure.gravatar.com" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

@@ -8,6 +8,7 @@
     "build": "astro check && astro build",
     "preview": "astro preview",
     "astro": "astro",
+    "test:canonical": "npm run build && node --test tests/canonical.test.mjs",
     "lighthouse": "lhci autorun",
     "lighthouse:assert": "lhci assert"
   },
