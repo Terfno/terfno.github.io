@@ -6,6 +6,7 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro check && astro build",
+    "test": "npm run build && node --test tests/*.test.mjs",
     "preview": "astro preview",
     "astro": "astro",
     "test:canonical": "npm run build && node --test tests/canonical.test.mjs",

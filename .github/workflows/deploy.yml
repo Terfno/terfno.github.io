@@ -1,31 +1,30 @@
-name: Deploy to GitHub Pages
+name: Deploy GitHub Pages redirect
 
 on:
   push:
     branches: [master]
   workflow_dispatch:
 
-# このジョブがリポジトリをクローンし、ページデプロイメントを作成することを許可します。
 permissions:
   contents: read
   pages: write
   id-token: write
 
 jobs:
-  build:
+  upload:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout your repository using git
+      - name: Checkout
         uses: actions/checkout@v6
-      - name: Set up mise
-        uses: jdx/mise-action@v2
-      - name: Install, build, and upload your site
-        uses: withastro/action@v6
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+      - name: Upload redirect site
+        uses: actions/upload-pages-artifact@v4
         with:
-          node-version: 24
+          path: github-pages-redirect
 
   deploy:
-    needs: build
+    needs: upload
     runs-on: ubuntu-latest
     environment:
       name: github-pages
