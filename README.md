@@ -32,8 +32,8 @@ All commands are run from the root of the project, from a terminal:
 
 | Command                     | Action                                           |
 | :-------------------------- | :----------------------------------------------- |
-| `mise install`              | Installs the project toolchain                  |
-| `npm ci`                    | Installs dependencies from `package-lock.json`  |
+| `mise install`              | Installs the project toolchain                   |
+| `npm ci`                    | Installs dependencies from `package-lock.json`   |
 | `npm run dev`               | Starts local dev server at `localhost:4321`      |
 | `npm run build`             | Build your production site to `./dist/`          |
 | `npm run preview`           | Preview your build locally, before deploying     |
@@ -64,3 +64,16 @@ Lighthouse CI is configured in `.lighthouserc.js` with the following settings:
 - **Core Web Vitals**: Enforced thresholds for FCP, LCP, CLS, and TBT
 
 The CI workflow runs automatically on pushes to `master` and on pull requests.
+
+## Hosting
+
+`sueda.jp` は Cloudflare Pages で Astro のビルド成果物を公開する。GitHub Pages
+には `.github/workflows/deploy.yml` から `github-pages-redirect/` だけを公開し、
+旧 URL `https://terfno.github.io/` へのアクセスを `https://sueda.jp/` へ転送する。
+転送時はパス・クエリ・ハッシュを引き継ぐ。GitHub Pages は静的配信のため、
+これは HTTP 301 ではなくブラウザでの転送となる。JavaScript を実行できない場合は
+トップページへ移動する。
+
+GitHub Pages のカスタムドメイン設定から `sueda.jp` を解除して、
+既定の `terfno.github.io` ドメインを利用する。旧 `CNAME` ファイルは使用しない。
+変更の公開後は両ドメインの配信元と転送先を確認する。
